@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 20px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .swatch { border-radius: 12px; overflow: hidden; flex: 1; min-width: 100px; }
+  .chip { height: 72px; }
+  .meta { padding: 8px 10px; background: #fff; }
+  .name { font-size: 12px; font-weight: 700; color: #1a1a2e; }
+  .hex { font-size: 11px; color: #9999b8; font-family: monospace; }
+  .var { font-size: 10px; color: #b98cff; font-family: monospace; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch">
+    <div class="chip" style="background:#ffc857;"></div>
+    <div class="meta"><div class="name">Yellow</div><div class="hex">#ffc857</div><div class="var">--color-yellow</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ffe0a0;"></div>
+    <div class="meta"><div class="name">Yellow Light</div><div class="hex">#ffe0a0</div><div class="var">--color-yellow-light</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#e0a830;"></div>
+    <div class="meta"><div class="name">Yellow Dark</div><div class="hex">#e0a830</div><div class="var">--color-yellow-dark</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#4a90e2;"></div>
+    <div class="meta"><div class="name">Blue</div><div class="hex">#4a90e2</div><div class="var">--color-blue</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#8ab8f0;"></div>
+    <div class="meta"><div class="name">Blue Light</div><div class="hex">#8ab8f0</div><div class="var">--color-blue-light</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#2d6bbf;"></div>
+    <div class="meta"><div class="name">Blue Dark</div><div class="hex">#2d6bbf</div><div class="var">--color-blue-dark</div></div>
+  </div>
+</div>
+</body>
+</html>

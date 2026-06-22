@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 20px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .swatch { border-radius: 12px; overflow: hidden; flex: 1; min-width: 90px; border: 1px solid rgba(138,79,255,0.1); }
+  .chip { height: 60px; }
+  .meta { padding: 8px 10px; background: #fff; }
+  .name { font-size: 11px; font-weight: 700; color: #1a1a2e; }
+  .hex { font-size: 10px; color: #9999b8; font-family: monospace; }
+  .var { font-size: 9px; color: #b98cff; font-family: monospace; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch">
+    <div class="chip" style="background:#1a1a2e;"></div>
+    <div class="meta"><div class="name">Near Black</div><div class="hex">#1a1a2e</div><div class="var">--color-text-primary</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#5a5a7a;"></div>
+    <div class="meta"><div class="name">Secondary</div><div class="hex">#5a5a7a</div><div class="var">--color-text-secondary</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#9999b8;"></div>
+    <div class="meta"><div class="name">Muted</div><div class="hex">#9999b8</div><div class="var">--color-text-muted</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#f5f3ff;"></div>
+    <div class="meta"><div class="name">BG Tint</div><div class="hex">#f5f3ff</div><div class="var">--color-bg</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ffffff;"></div>
+    <div class="meta"><div class="name">White</div><div class="hex">#ffffff</div><div class="var">--color-surface</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:rgba(138,79,255,0.15); background-image: repeating-linear-gradient(45deg, rgba(138,79,255,0.05) 0, rgba(138,79,255,0.05) 1px, transparent 0, transparent 50%); background-size: 10px 10px;"></div>
+    <div class="meta"><div class="name">Border</div><div class="hex">rgba(purple, 15%)</div><div class="var">--color-border</div></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 20px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .swatch { border-radius: 12px; overflow: hidden; flex: 1; min-width: 100px; }
+  .chip { height: 60px; display: flex; align-items: center; justify-content: center; }
+  .chip span { font-size: 11px; font-weight: 700; color: #fff; letter-spacing: 0.06em; text-transform: uppercase; text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+  .meta { padding: 8px 10px; background: #fff; }
+  .name { font-size: 12px; font-weight: 700; color: #1a1a2e; }
+  .hex { font-size: 11px; color: #9999b8; font-family: monospace; }
+  .var { font-size: 10px; color: #b98cff; font-family: monospace; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch">
+    <div class="chip" style="background:#4ecb71;"><span>Success</span></div>
+    <div class="meta"><div class="name">Success</div><div class="hex">#4ecb71</div><div class="var">--color-success</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ffc857;"><span style="color:#1a1a2e; text-shadow:none;">Warning</span></div>
+    <div class="meta"><div class="name">Warning</div><div class="hex">#ffc857</div><div class="var">--color-warning</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ff5c5c;"><span>Error</span></div>
+    <div class="meta"><div class="name">Error</div><div class="hex">#ff5c5c</div><div class="var">--color-error</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#4a90e2;"><span>Info</span></div>
+    <div class="meta"><div class="name">Info</div><div class="hex">#4a90e2</div><div class="var">--color-info</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#8a4fff;"><span>Accent</span></div>
+    <div class="meta"><div class="name">Accent</div><div class="hex">#8a4fff</div><div class="var">--color-accent</div></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ff7a59;"><span>Accent 2</span></div>
+    <div class="meta"><div class="name">Accent 2</div><div class="hex">#ff7a59</div><div class="var">--color-accent2</div></div>
+  </div>
+</div>
+</body>
+</html>

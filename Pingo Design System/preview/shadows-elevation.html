@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 24px; }
+  .row { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .card { width: 96px; height: 64px; background: #fff; border-radius: 16px; }
+  .token { font-family: 'JetBrains Mono'; font-size: 9px; color: #8a4fff; text-align: center; }
+  .label { font-size: 11px; font-weight: 700; color: #1a1a2e; text-align: center; }
+  .glow-coral { box-shadow: 0 4px 24px rgba(255,122,89,0.35); }
+  .glow-purple { box-shadow: 0 4px 24px rgba(138,79,255,0.35); }
+  .glow-yellow { box-shadow: 0 4px 24px rgba(255,200,87,0.40); }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item">
+    <div class="card" style="box-shadow:none; border: 1px solid rgba(138,79,255,0.12);"></div>
+    <div class="label">Level 0</div>
+    <div class="token">--shadow-0</div>
+  </div>
+  <div class="item">
+    <div class="card" style="box-shadow:0 2px 8px rgba(138,79,255,0.08);"></div>
+    <div class="label">Level 1</div>
+    <div class="token">--shadow-1</div>
+  </div>
+  <div class="item">
+    <div class="card" style="box-shadow:0 4px 24px rgba(138,79,255,0.12);"></div>
+    <div class="label">Level 2</div>
+    <div class="token">--shadow-2</div>
+  </div>
+  <div class="item">
+    <div class="card" style="box-shadow:0 8px 40px rgba(138,79,255,0.18);"></div>
+    <div class="label">Level 3</div>
+    <div class="token">--shadow-3</div>
+  </div>
+  <div class="item">
+    <div class="card" style="box-shadow:0 16px 64px rgba(138,79,255,0.24);"></div>
+    <div class="label">Level 4</div>
+    <div class="token">--shadow-4</div>
+  </div>
+  <div class="item">
+    <div class="card glow-coral" style="background:#ff7a59;"></div>
+    <div class="label">Glow Coral</div>
+    <div class="token">--shadow-coral</div>
+  </div>
+  <div class="item">
+    <div class="card glow-purple" style="background:#8a4fff;"></div>
+    <div class="label">Glow Purple</div>
+    <div class="token">--shadow-purple</div>
+  </div>
+  <div class="item">
+    <div class="card glow-yellow" style="background:#ffc857;"></div>
+    <div class="label">Glow Yellow</div>
+    <div class="token">--shadow-yellow</div>
+  </div>
+</div>
+</body>
+</html>

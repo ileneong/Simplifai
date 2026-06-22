@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 20px 24px; }
+  .row { display: flex; flex-direction: column; gap: 6px; }
+  .item { display: flex; align-items: center; gap: 12px; }
+  .bar-wrap { flex: 1; height: 20px; display: flex; align-items: center; }
+  .bar { height: 14px; background: #8a4fff; border-radius: 4px; opacity: 0.7; }
+  .token { font-family: 'JetBrains Mono'; font-size: 11px; color: #8a4fff; min-width: 80px; }
+  .px { font-size: 11px; font-weight: 700; color: #1a1a2e; min-width: 36px; }
+  .use { font-size: 11px; color: #9999b8; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item"><div class="token">--space-1</div><div class="px">4px</div><div class="bar-wrap"><div class="bar" style="width:4px;"></div></div><div class="use">Icon gap, micro nudge</div></div>
+  <div class="item"><div class="token">--space-2</div><div class="px">8px</div><div class="bar-wrap"><div class="bar" style="width:8px;"></div></div><div class="use">Tight padding, small gap</div></div>
+  <div class="item"><div class="token">--space-3</div><div class="px">12px</div><div class="bar-wrap"><div class="bar" style="width:12px;"></div></div><div class="use">Button inline padding</div></div>
+  <div class="item"><div class="token">--space-4</div><div class="px">16px</div><div class="bar-wrap"><div class="bar" style="width:16px;"></div></div><div class="use">Card inner padding (sm)</div></div>
+  <div class="item"><div class="token">--space-5</div><div class="px">24px</div><div class="bar-wrap"><div class="bar" style="width:24px;"></div></div><div class="use">Card padding (default)</div></div>
+  <div class="item"><div class="token">--space-6</div><div class="px">32px</div><div class="bar-wrap"><div class="bar" style="width:32px;"></div></div><div class="use">Section inner padding</div></div>
+  <div class="item"><div class="token">--space-7</div><div class="px">48px</div><div class="bar-wrap"><div class="bar" style="width:48px;"></div></div><div class="use">Component spacing</div></div>
+  <div class="item"><div class="token">--space-8</div><div class="px">64px</div><div class="bar-wrap"><div class="bar" style="width:64px;"></div></div><div class="use">Section gap</div></div>
+  <div class="item"><div class="token">--space-9</div><div class="px">96px</div><div class="bar-wrap"><div class="bar" style="width:96px;"></div></div><div class="use">Page section spacing</div></div>
+  <div class="item"><div class="token">--space-10</div><div class="px">128px</div><div class="bar-wrap"><div class="bar" style="width:128px;"></div></div><div class="use">Hero vertical padding</div></div>
+</div>
+</body>
+</html>

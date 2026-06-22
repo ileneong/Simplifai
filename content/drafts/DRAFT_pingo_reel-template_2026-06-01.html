@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pingo — Faceless Reel Template (1080×1920)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#1a1a2e; display:flex; flex-direction:column; align-items:center; gap:40px; padding:40px; }
+
+/* 1080×1920 — 9:16 vertical Reel */
+.frame {
+  width:1080px; height:1920px; position:relative; overflow:hidden;
+  font-family:'Plus Jakarta Sans', sans-serif; flex-shrink:0;
+}
+
+/* ---- IG SAFE-ZONE GUIDES (design aid; turn off before publishing) ---- */
+.safe { position:absolute; pointer-events:none; z-index:5;
+  border:2px dashed rgba(0,0,0,0.18); }
+.frame.dark .safe { border-color:rgba(255,255,255,0.28); }
+.safe-top    { top:0;    left:0; right:0; height:220px; border-left:0; border-right:0; border-top:0; }
+.safe-bottom { bottom:0; left:0; right:0; height:420px; border-left:0; border-right:0; border-bottom:0; }
+.safe-right  { top:0;  bottom:0; right:0; width:180px; border-top:0; border-bottom:0; border-right:0; }
+.safe-label  { position:absolute; z-index:5; font:600 22px 'Plus Jakarta Sans';
+  letter-spacing:.06em; text-transform:uppercase; opacity:.45; }
+.frame.dark .safe-label { color:#fff; } .frame.light .safe-label { color:#1a1a2e; }
+.lbl-top    { top:184px;  left:50%; transform:translateX(-50%); }
+.lbl-bottom { bottom:430px; left:50%; transform:translateX(-50%); }
+
+/* ---- CONTENT (lives inside the middle safe region) ---- */
+.content { position:absolute; top:220px; left:0; right:180px; bottom:420px;
+  padding:0 90px; display:flex; flex-direction:column; justify-content:center; z-index:3; }
+
+.kicker { align-self:flex-start; font:700 26px 'Plus Jakarta Sans';
+  letter-spacing:.10em; text-transform:uppercase; padding:14px 30px;
+  border-radius:9999px; margin-bottom:56px; }
+
+.accent { font-family:'Poppins'; font-weight:800; font-size:120px; line-height:.7;
+  margin-bottom:24px; }
+
+.headline { font-family:'Poppins'; font-weight:800; font-size:118px; line-height:1.02;
+  letter-spacing:-0.025em; margin-bottom:44px; }
+
+.support { font-family:'Plus Jakarta Sans'; font-weight:500; font-size:46px;
+  line-height:1.5; max-width:780px; }
+
+/* ---- CTA strip (lower third, above bottom safe zone) ---- */
+.cta { position:absolute; left:90px; bottom:470px; z-index:4;
+  font:700 38px 'Plus Jakarta Sans'; padding:26px 48px; border-radius:9999px;
+  display:inline-flex; align-items:center; gap:18px; }
+
+/* ---- Wordmark lower-third (bottom-left, inside safe zone) ---- */
+.wordmark { position:absolute; left:90px; bottom:300px; z-index:4;
+  font-family:'Poppins'; font-weight:800; font-size:56px; letter-spacing:-0.02em; }
+
+/* ============ SCHEME A — YELLOW ============ */
+.scheme-a { background:#ffc857; }
+.scheme-a .kicker   { background:#1a1a2e; color:#ffc857; }
+.scheme-a .accent   { color:#ff7a59; }
+.scheme-a .headline { color:#1a1a2e; }
+.scheme-a .support  { color:#2a5f74; }
+.scheme-a .cta      { background:#ff7a59; color:#fff; }
+.scheme-a .wordmark { color:#1a1a2e; }
+.scheme-a .wordmark em { color:#ff7a59; font-style:normal; }
+
+/* ============ SCHEME B — CORAL ============ */
+.scheme-b { background:#ff7a59; }
+.scheme-b .kicker   { background:#fff; color:#ff7a59; }
+.scheme-b .accent   { color:#ffc857; }
+.scheme-b .headline { color:#fff; }
+.scheme-b .support  { color:rgba(255,255,255,0.88); }
+.scheme-b .cta      { background:#ffc857; color:#1a1a2e; }
+.scheme-b .wordmark { color:#fff; }
+.scheme-b .wordmark em { color:#ffc857; font-style:normal; }
+
+/* ============ SCHEME C — PURPLE ============ */
+.scheme-c { background:#8a4fff; }
+.scheme-c .kicker   { background:#ffc857; color:#1a1a2e; }
+.scheme-c .accent   { color:#ffc857; }
+.scheme-c .headline { color:#fff; }
+.scheme-c .support  { color:rgba(255,255,255,0.84); }
+.scheme-c .cta      { background:#ffc857; color:#1a1a2e; }
+.scheme-c .wordmark { color:#fff; }
+.scheme-c .wordmark em { color:#ffc857; font-style:normal; }
+
+/* ============ SCHEME D — LIGHT ============ */
+.scheme-d { background:#f5f3ff; }
+.scheme-d .kicker   { background:#8a4fff; color:#fff; }
+.scheme-d .accent   { color:#8a4fff; }
+.scheme-d .headline { color:#1a1a2e; }
+.scheme-d .support  { color:#5a5a7a; }
+.scheme-d .cta      { background:#8a4fff; color:#fff; }
+.scheme-d .wordmark { color:#1a1a2e; }
+.scheme-d .wordmark em { color:#8a4fff; font-style:normal; }
+</style>
+</head>
+<body>
+
+<!-- ===== Frame 1 — Scheme A (Yellow) ===== -->
+<div class="frame scheme-a light" id="slide-1">
+  <div class="safe safe-top"></div><div class="safe safe-bottom"></div><div class="safe safe-right"></div>
+  <div class="safe-label lbl-top">↑ keep clear — IG label</div>
+  <div class="safe-label lbl-bottom">↓ keep clear — caption &amp; audio</div>
+  <div class="content">
+    <span class="kicker">Pingo · Reframe</span>
+    <div class="accent">✳</div>
+    <div class="headline">Your hook goes here.</div>
+    <div class="support">One line of context — the setup before the system message lands.</div>
+  </div>
+  <div class="cta">⤓ Save this</div>
+  <div class="wordmark">pin<em>go</em></div>
+</div>
+
+<!-- ===== Frame 2 — Scheme B (Coral) ===== -->
+<div class="frame scheme-b dark" id="slide-2">
+  <div class="safe safe-top"></div><div class="safe safe-bottom"></div><div class="safe safe-right"></div>
+  <div class="safe-label lbl-top">↑ keep clear — IG label</div>
+  <div class="safe-label lbl-bottom">↓ keep clear — caption &amp; audio</div>
+  <div class="content">
+    <span class="kicker">Pingo · Reframe</span>
+    <div class="accent">✳</div>
+    <div class="headline">Your hook goes here.</div>
+    <div class="support">One line of context — the setup before the system message lands.</div>
+  </div>
+  <div class="cta">↗ Send to a friend</div>
+  <div class="wordmark">pin<em>go</em></div>
+</div>
+
+<!-- ===== Frame 3 — Scheme C (Purple) ===== -->
+<div class="frame scheme-c dark" id="slide-3">
+  <div class="safe safe-top"></div><div class="safe safe-bottom"></div><div class="safe safe-right"></div>
+  <div class="safe-label lbl-top">↑ keep clear — IG label</div>
+  <div class="safe-label lbl-bottom">↓ keep clear — caption &amp; audio</div>
+  <div class="content">
+    <span class="kicker">Pingo · Build</span>
+    <div class="accent">✳</div>
+    <div class="headline">Your hook goes here.</div>
+    <div class="support">One line of context — the setup before the system message lands.</div>
+  </div>
+  <div class="cta">⤓ Save this</div>
+  <div class="wordmark">pin<em>go</em></div>
+</div>
+
+<!-- ===== Frame 4 — Scheme D (Light) ===== -->
+<div class="frame scheme-d light" id="slide-4">
+  <div class="safe safe-top"></div><div class="safe safe-bottom"></div><div class="safe safe-right"></div>
+  <div class="safe-label lbl-top">↑ keep clear — IG label</div>
+  <div class="safe-label lbl-bottom">↓ keep clear — caption &amp; audio</div>
+  <div class="content">
+    <span class="kicker">Pingo · Reassure</span>
+    <div class="accent">✳</div>
+    <div class="headline">Your hook goes here.</div>
+    <div class="support">One line of context — the setup before the system message lands.</div>
+  </div>
+  <div class="cta">↗ Send to a friend</div>
+  <div class="wordmark">pin<em>go</em></div>
+</div>
+
+</body>
+</html>

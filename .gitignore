@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+.playwright/
+
+# Client engagement data — keep off the remote (compliance)
+client-*/
+reports/
+
+# Lead/prospect data with real contact details
+growth/lead-gen/*.csv

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 20px 24px; }
+  .row { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .box { width: 56px; height: 56px; background: #8a4fff; opacity: 0.8; }
+  .token { font-family: 'JetBrains Mono'; font-size: 9px; color: #8a4fff; text-align: center; }
+  .px { font-size: 11px; font-weight: 700; color: #1a1a2e; text-align: center; }
+  .blob-demo { width: 80px; height: 56px; background: #ffc857; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  .pill-demo { width: 80px; height: 36px; background: #ff7a59; border-radius: 9999px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item">
+    <div class="box" style="border-radius:8px;"></div>
+    <div class="px">8px</div>
+    <div class="token">--radius-sm</div>
+  </div>
+  <div class="item">
+    <div class="box" style="border-radius:12px;"></div>
+    <div class="px">12px</div>
+    <div class="token">--radius-md</div>
+  </div>
+  <div class="item">
+    <div class="box" style="border-radius:16px;"></div>
+    <div class="px">16px</div>
+    <div class="token">--radius-lg</div>
+  </div>
+  <div class="item">
+    <div class="box" style="border-radius:24px;"></div>
+    <div class="px">24px</div>
+    <div class="token">--radius-xl</div>
+  </div>
+  <div class="item">
+    <div class="box" style="border-radius:32px;"></div>
+    <div class="px">32px</div>
+    <div class="token">--radius-2xl</div>
+  </div>
+  <div class="item">
+    <div class="pill-demo"></div>
+    <div class="px">Pill</div>
+    <div class="token">--radius-full</div>
+  </div>
+  <div class="item">
+    <div class="blob-demo"></div>
+    <div class="px">Blob</div>
+    <div class="token">--radius-blob</div>
+  </div>
+</div>
+</body>
+</html>
