@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f3ff; padding: 24px; }
+  .grid { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .swatch {
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .swatch img { width: 100%; height: 100%; object-fit: contain; }
+  .swatch-coral { width: 160px; height: 160px; background: #ff7a59; }
+  .swatch-white { width: 160px; height: 160px; background: #ffffff; border: 1px solid rgba(138,79,255,0.12); }
+  .swatch-yellow { width: 160px; height: 160px; background: #ffc857; }
+  .swatch-purple { width: 160px; height: 160px; background: #8a4fff; }
+  .info { flex: 1; min-width: 180px; }
+  .info h2 { font-family: 'Poppins', sans-serif; font-size: 28px; color: #8a4fff; margin-bottom: 6px; }
+  .info p { font-size: 13px; color: #5a5a7a; line-height: 1.5; }
+  .tag { display: inline-block; background: rgba(138,79,255,0.1); color: #8a4fff; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border-radius: 9999px; margin-top: 8px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="swatch swatch-white"><img src="../assets/SimplifaiTransparent.png" alt="Simplifai logo transparent"></div>
+  <div class="swatch swatch-coral"><img src="../assets/SimplifaiWhite.png" alt="Simplifai logo white"></div>
+  <div class="info">
+    <h2>Simplifai</h2>
+    <p>Primary logo is transparent — yellow blob + purple wordmark — for light/neutral backgrounds. The white-cloud variant is for coral/dark backgrounds. A solid yellow-tile badge is also available. All use purple bubbly type with organic blob shapes.</p>
+    <span class="tag">PNG available</span>
+    <span class="tag">Transparent</span>
+    <span class="tag">Blob motif</span>
+  </div>
+</div>
+</body>
+</html>

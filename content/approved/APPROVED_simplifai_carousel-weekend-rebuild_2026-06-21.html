@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simplifai — Carousel · The Weekend Rebuild (1080×1350)</title>
+<!-- Design system tokens -->
+<link rel="stylesheet" href="../../brand-guidelines/simplifai/colors_and_type.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#1a1a2e; display:flex; flex-direction:column; align-items:center; gap:40px; padding:40px;
+  font-family:'Plus Jakarta Sans', sans-serif; }
+
+/* 1080×1350 — 4:5 portrait carousel slide. Scheme A — Yellow. */
+.slide {
+  width:1080px; height:1350px; position:relative; overflow:hidden;
+  background:#ffc857; flex-shrink:0;
+  font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+/* Safe zone — all content stays inside */
+.content {
+  position:absolute; inset:0; padding:96px; /* --space-9 */
+  display:flex; flex-direction:column; justify-content:center;
+}
+
+/* Kicker — small label, slide 1 + final only */
+.kicker {
+  align-self:flex-start; font:700 28px 'Plus Jakarta Sans';
+  letter-spacing:.10em; text-transform:uppercase;
+  background:#1a1a2e; color:#ffc857;
+  padding:14px 30px; border-radius:9999px; margin-bottom:48px;
+}
+
+/* Accent mark — coral asterisk, the carousel's through-line motif */
+.accent {
+  font-family:'Poppins'; font-weight:800; font-size:96px; line-height:.7;
+  color:#ff7a59; margin-bottom:36px;
+}
+
+/* Headline */
+.headline {
+  font-family:'Poppins'; font-weight:800; font-size:100px;
+  line-height:1.02; letter-spacing:-0.025em;
+  color:#1a1a2e; margin-bottom:48px; /* --space-7 */
+}
+.headline .pop { color:#ff7a59; } /* coral emphasis word */
+
+/* Body copy */
+.body {
+  font-family:'Plus Jakarta Sans'; font-weight:500; font-size:44px;
+  line-height:1.5; color:#2a5f74; max-width:840px;
+}
+.body strong { font-weight:700; color:#1a1a2e; }
+
+/* Swipe cue (slide 1) */
+.swipe {
+  position:absolute; right:96px; bottom:104px; z-index:4;
+  font:700 34px 'Plus Jakarta Sans'; color:#1a1a2e; opacity:.7;
+  display:inline-flex; align-items:center; gap:12px;
+}
+
+/* Save CTA pill (final slide) */
+.cta {
+  align-self:flex-start; margin-top:8px;
+  font:700 40px 'Plus Jakarta Sans'; color:#fff; background:#ff7a59;
+  padding:26px 52px; border-radius:9999px;
+  display:inline-flex; align-items:center; gap:18px;
+}
+
+/* Wordmark — bottom-left, inside safe zone (cleaner than the white-boxed jpg on flat yellow) */
+.wordmark {
+  position:absolute; bottom:96px; left:96px; z-index:4;
+  font-family:'Poppins'; font-weight:800; font-size:52px;
+  letter-spacing:-0.02em; color:#1a1a2e;
+}
+.wordmark em { color:#ff7a59; font-style:normal; }
+
+/* Slide counter — subtle, top-right */
+.counter {
+  position:absolute; top:96px; right:96px; z-index:4;
+  font:700 30px 'Plus Jakarta Sans'; color:#1a1a2e; opacity:.45;
+  letter-spacing:.04em;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Slide 1 — HOOK ===== -->
+<div class="slide" id="slide-1">
+  <div class="counter">01 / 06</div>
+  <div class="content">
+    <span class="kicker">The weekend rebuild</span>
+    <div class="accent">✳</div>
+    <div class="headline">I rebuilt a brand's whole content system. In a&nbsp;<span class="pop">weekend.</span></div>
+    <div class="body">Not a post. Not a month of captions. The whole <strong>system</strong>.</div>
+  </div>
+  <span class="swipe">Here's what that means →</span>
+</div>
+
+<!-- ===== Slide 2 — WHAT WE BUILT ===== -->
+<div class="slide" id="slide-2">
+  <div class="counter">02 / 06</div>
+  <div class="content">
+    <div class="accent">✳</div>
+    <div class="headline">We built her a <span class="pop">Stack.</span></div>
+    <div class="body">Her brand. Her voice. Her prompts. Her templates. The system that does the heavy lifting — so she isn't starting from a blank box.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 3 — WHY IT MATTERS ===== -->
+<div class="slide" id="slide-3">
+  <div class="counter">03 / 06</div>
+  <div class="content">
+    <div class="accent">✳</div>
+    <div class="headline">So the posts sound like <span class="pop">her.</span> Every time.</div>
+    <div class="body">Not generic AI. Her expertise, her judgment — kept firmly in the driver's seat.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 4 — THE HANDOVER ===== -->
+<div class="slide" id="slide-4">
+  <div class="counter">04 / 06</div>
+  <div class="content">
+    <div class="accent">✳</div>
+    <div class="headline">Then I handed it&nbsp;back.</div>
+    <div class="body">She runs it herself now — a couple of hours a week. I never wanted to be the <strong>bottleneck</strong>.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 5 — THE RESOLVE ===== -->
+<div class="slide" id="slide-5">
+  <div class="counter">05 / 06</div>
+  <div class="content">
+    <div class="accent">✳</div>
+    <div class="headline">That's what "built in a weekend" really means.</div>
+    <div class="body">Not content for hire. A <strong>system you own</strong> — built fast, then yours to run.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 6 — CTA / SAVE ===== -->
+<div class="slide" id="slide-6">
+  <div class="counter">06 / 06</div>
+  <div class="content">
+    <span class="kicker">You bring the expertise. We bring the system.</span>
+    <div class="accent">✳</div>
+    <div class="headline">Want yours rebuilt&nbsp;too?</div>
+    <div class="body" style="margin-bottom:48px;">Save this as the goal for your own marketing — then come build it.</div>
+    <span class="cta">⤓ Save this</span>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+</body>
+</html>

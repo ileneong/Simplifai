@@ -1,4 +1,4 @@
-# Pingo Intel Digest — Week of 2026-06-22
+# Simplifai Intel Digest — Week of 2026-06-22
 
 *AI tool updates worth an owner's attention this week. Researched with AI; every item traced to a primary source.*
 
@@ -33,7 +33,7 @@
 ## Recommended post of the week
 **Item #2 → Carousel**
 - **Pillar:** System teaching (drives Saves)
-- **Suggested scheme:** B (Coral Hero) — last shipped was A (Yellow) on 2026-06-21; rotation calls for B or D. Confirm against the log in `pingo-instagram-post.md` before building.
+- **Suggested scheme:** B (Coral Hero) — last shipped was A (Yellow) on 2026-06-21; rotation calls for B or D. Confirm against the log in `simplifai-instagram-post.md` before building.
 - **Hook (slide 1):** "Stop re-explaining your business to ChatGPT every time."
 - **Slide beats:**
   1. Hook: the re-explaining problem every owner knows.
@@ -45,4 +45,4 @@
 - **Caption seed:** Open with the re-explaining pain, give the one-time setup steps in plain language, name the source (OpenAI's June release notes) so the claim is verifiable, add the privacy caveat, close with a save-and-follow CTA. Disclose AI assistance. No em dashes.
 
 ---
-*Researched 2026-06-22 with AI assistance, per the [`pingo-trend-research`](../../.claude/skills/pingo-trend-research.md) skill. Verify each primary source before publishing.*
+*Researched 2026-06-22 with AI assistance, per the [`simplifai-trend-research`](../../.claude/skills/simplifai-trend-research.md) skill. Verify each primary source before publishing.*

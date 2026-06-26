@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="256" height="256" role="img" aria-label="Simplifai">
+  <defs>
+    <mask id="cutCoral">
+      <rect width="100" height="100" fill="#fff"/>
+      <rect x="24" y="24" width="52" height="52" rx="19"/>
+    </mask>
+    <mask id="cutPurple">
+      <rect width="100" height="100" fill="#fff"/>
+      <rect x="41" y="41" width="52" height="52" rx="19"/>
+    </mask>
+  </defs>
+  <rect x="12" y="12" width="42" height="42" rx="14" fill="#1a1a2e" mask="url(#cutCoral)"/>
+  <rect x="29" y="29" width="42" height="42" rx="14" fill="#1a1a2e" mask="url(#cutPurple)"/>
+  <rect x="46" y="46" width="42" height="42" rx="14" fill="#1a1a2e"/>
+</svg>

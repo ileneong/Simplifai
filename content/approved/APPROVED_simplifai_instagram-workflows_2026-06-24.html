@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — The jobs your business repeats every week</title>
+  <link rel="stylesheet" href="../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e; /* dark preview surround */
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; padding: 40px;
+      font-family: var(--font-body);
+    }
+
+    /* 1080×1350 — 4:5 ratio, always — Scheme D (Light/Neutral) */
+    .post {
+      width: 1080px; height: 1350px;
+      position: relative; overflow: hidden;
+      background: var(--color-bg);           /* #f5f3ff */
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: absolute; inset: 0;
+      padding: 80px;
+      display: flex; flex-direction: column;
+    }
+
+    /* ---- Header ---- */
+    .label {
+      font-family: var(--font-body);
+      font-weight: var(--fw-bold);
+      font-size: 28px;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      color: var(--color-purple);
+      margin-bottom: 22px;
+    }
+
+    .headline {
+      font-family: var(--font-display);
+      font-weight: var(--fw-extrabold);      /* 800 */
+      font-size: 68px;
+      line-height: 1.05;
+      letter-spacing: var(--tracking-tight);
+      color: var(--color-text-primary);      /* #1a1a2e */
+      margin-bottom: 28px;
+    }
+    /* single accent element — coral underline on key phrase */
+    .headline .mark {
+      position: relative;
+      white-space: nowrap;
+    }
+    .headline .mark::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 2px;
+      height: 14px;
+      background: var(--color-coral);
+      border-radius: 8px;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    .body {
+      font-family: var(--font-body);
+      font-weight: var(--fw-medium);
+      font-size: 34px;
+      line-height: var(--leading-snug);
+      color: var(--color-text-secondary);    /* #5a5a7a */
+      max-width: 840px;
+    }
+
+    /* ---- Workflow grid ---- */
+    .grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 44px;
+      margin-bottom: 36px;
+    }
+
+    .card {
+      background: var(--color-surface);       /* #fff */
+      border-radius: var(--radius-2xl);       /* 32px */
+      border: 1.5px solid var(--color-border);
+      padding: 28px 30px;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .icon {
+      width: 96px; height: 96px;
+      border-radius: 26px;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .icon svg { width: 52px; height: 52px; }
+
+    .ic-coral  { background: rgba(255,122,89,0.14); }
+    .ic-purple { background: rgba(138,79,255,0.13); }
+    .ic-yellow { background: rgba(255,200,87,0.22); }
+    .ic-blue   { background: rgba(74,144,226,0.13); }
+
+    .stroke-coral  { stroke: var(--color-coral); }
+    .stroke-purple { stroke: var(--color-purple); }
+    .stroke-yellow { stroke: var(--color-yellow-dark); }
+    .stroke-blue   { stroke: var(--color-blue); }
+
+    .card-text { display: flex; flex-direction: column; gap: 6px; }
+    .card-title {
+      font-family: var(--font-display);
+      font-weight: var(--fw-bold);
+      font-size: 32px;
+      line-height: 1.1;
+      color: var(--color-text-primary);
+    }
+    .card-desc {
+      font-family: var(--font-body);
+      font-weight: var(--fw-regular);
+      font-size: 23px;
+      line-height: 1.3;
+      color: var(--color-text-muted);
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer img { height: 60px; width: auto; object-fit: contain; object-position: left center; }
+    .footer .kicker {
+      font-family: var(--font-body);
+      font-weight: var(--fw-semibold);
+      font-size: 26px;
+      color: var(--color-text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <div class="post" id="slide-1">
+    <div class="content">
+      <!-- Header -->
+      <div class="label">The Simplifai Stack</div>
+      <div class="headline">The jobs your business<br><span class="mark">repeats every week.</span></div>
+      <div class="body">Most small businesses run on the same handful of workflows. AI can take the first pass at each one.</div>
+
+      <!-- Grid -->
+      <div class="grid">
+        <!-- Customer support -->
+        <div class="card">
+          <div class="icon ic-coral">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-coral">
+              <path d="M12 14h40a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H28l-12 10v-10h-4a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4Z"/>
+              <path d="M24 28h0M32 28h0M40 28h0"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <div class="card-title">Customer support</div>
+            <div class="card-desc">Replies, FAQs, follow-ups</div>
+          </div>
+        </div>
+
+        <!-- Lead generation -->
+        <div class="card">
+          <div class="icon ic-purple">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple">
+              <path d="M10 14h44L38 36v16l-12 6V36L10 14Z"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <div class="card-title">Lead generation</div>
+            <div class="card-desc">Capture, qualify, nurture</div>
+          </div>
+        </div>
+
+        <!-- Feedback collection -->
+        <div class="card">
+          <div class="icon ic-yellow">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow">
+              <path d="M32 10l6.6 13.4 14.8 2.1-10.7 10.4 2.5 14.7L32 43.8l-13.2 6.8 2.5-14.7L10.6 25.5l14.8-2.1L32 10Z"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <div class="card-title">Feedback &amp; reviews</div>
+            <div class="card-desc">Collect, sort, respond</div>
+          </div>
+        </div>
+
+        <!-- Content & social -->
+        <div class="card">
+          <div class="icon ic-blue">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue">
+              <path d="M40 12l12 12-28 28-13 1 1-13 28-28Z"/>
+              <path d="M36 16l12 12"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <div class="card-title">Content &amp; social</div>
+            <div class="card-desc">Captions, posts, calendar</div>
+          </div>
+        </div>
+
+        <!-- Bookings & scheduling -->
+        <div class="card">
+          <div class="icon ic-coral">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-coral">
+              <rect x="10" y="14" width="44" height="40" rx="5"/>
+              <path d="M10 26h44M22 10v8M42 10v8"/>
+              <path d="M22 38l6 6 12-12"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <div class="card-title">Bookings</div>
+            <div class="card-desc">Scheduling &amp; reminders</div>
+          </div>
+        </div>
+
+        <!-- Follow-ups / admin -->
+        <div class="card">
+          <div class="icon ic-purple">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple">
+              <path d="M54 12L8 30l18 6 6 18 22-42Z"/>
+              <path d="M26 36l12-12"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <div class="card-title">Follow-ups</div>
+            <div class="card-desc">Quotes, invoices, check-ins</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <img src="../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+        <div class="kicker">One system. A few hours a week.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
