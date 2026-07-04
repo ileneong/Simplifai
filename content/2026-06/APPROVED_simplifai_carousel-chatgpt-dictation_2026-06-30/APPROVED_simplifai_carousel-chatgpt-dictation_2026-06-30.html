@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — Talk, do not type</title>
+  <link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e; /* dark preview surround */
+      display: flex; flex-wrap: wrap; gap: 40px;
+      align-items: flex-start; justify-content: center;
+      min-height: 100vh; padding: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* 1080×1350 — 4:5 ratio, always — Scheme D: Light/Neutral */
+    .slide {
+      width: 1080px; height: 1350px;
+      position: relative; overflow: hidden;
+      background: #f5f3ff; /* --color-bg / purple tint */
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: absolute; inset: 0;
+      padding: 96px; /* --space-9 safe zone */
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    /* Illustration — sits above the kicker/headline */
+    .illo { margin-bottom: 56px; }
+    .illo svg { width: 280px; height: auto; overflow: visible; display: block; }
+    .illo .s  { fill: none; stroke: #8a4fff; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; } /* purple line */
+    .illo .a  { fill: none; stroke: #ff7a59; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; } /* coral accent line */
+    .illo .fp { fill: #8a4fff; }
+    .illo .fc { fill: #ff7a59; }
+
+    /* Kicker — small label, coral, sits above the headline */
+    .kicker {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #ff7a59; /* --color-coral */
+      margin-bottom: 30px;
+    }
+
+    .headline {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 96px;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      color: #1a1a2e; /* --color-text-primary */
+      margin-bottom: 40px;
+    }
+    .headline.smaller { font-size: 78px; }
+
+    /* Accent — thick underline bar (the single accent element) */
+    .rule {
+      width: 96px; height: 8px;
+      background: #8a4fff; /* purple */
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+
+    .body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 1.6;
+      color: #5a5a7a; /* --color-text-secondary */
+      max-width: 880px;
+    }
+    .body strong { color: #8a4fff; font-weight: 700; }
+
+    /* Slide counter — bottom-right, subtle */
+    .counter {
+      position: absolute;
+      bottom: 104px; right: 96px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: rgba(90,90,122,0.7);
+      letter-spacing: 0.04em;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 96px; left: 96px;
+      width: 280px; height: auto;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1 — HOOK -->
+  <div class="slide" id="slide-1">
+    <div class="content">
+      <div class="illo">
+        <!-- Microphone with sound waves -->
+        <svg viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet">
+          <rect class="s" x="95" y="30" width="50" height="95" rx="25"/>
+          <path class="s" d="M70 105 C70 150, 170 150, 170 105"/>
+          <line class="s" x1="120" y1="150" x2="120" y2="178"/>
+          <line class="s" x1="95" y1="180" x2="145" y2="180"/>
+          <path class="a" d="M60 72 C46 88, 46 116, 60 132"/>
+          <path class="a" d="M40 54 C18 82, 18 138, 40 164"/>
+          <path class="a" d="M180 72 C194 88, 194 116, 180 132"/>
+          <path class="a" d="M200 54 C222 82, 222 138, 200 164"/>
+        </svg>
+      </div>
+      <div class="headline">Talk, do not type.</div>
+      <div class="rule"></div>
+      <div class="body">A week of content, drafted between clients. No keyboard required.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+    <div class="counter">01 / 06</div>
+  </div>
+
+  <!-- SLIDE 2 — WHAT CHANGED -->
+  <div class="slide" id="slide-2">
+    <div class="content">
+      <div class="illo">
+        <!-- Speech bubble with voice waveform -->
+        <svg viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet">
+          <rect class="s" x="35" y="40" width="170" height="110" rx="28"/>
+          <path class="s" d="M82 150 L82 192 L120 150"/>
+          <line class="a" x1="75" y1="86" x2="75" y2="116"/>
+          <line class="a" x1="98" y1="72" x2="98" y2="130"/>
+          <line class="a" x1="120" y1="82" x2="120" y2="120"/>
+          <line class="a" x1="143" y1="68" x2="143" y2="134"/>
+          <line class="a" x1="166" y1="88" x2="166" y2="114"/>
+        </svg>
+      </div>
+      <div class="kicker">What just changed</div>
+      <div class="headline smaller">ChatGPT just got much better at typing for you.</div>
+      <div class="rule"></div>
+      <div class="body">A new dictation upgrade landed on every plan, free included. You tap the mic, talk, and it writes it up.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+    <div class="counter">02 / 06</div>
+  </div>
+
+  <!-- SLIDE 3 — WHY IT MATTERS -->
+  <div class="slide" id="slide-3">
+    <div class="content">
+      <div class="illo">
+        <!-- Clock turning minutes into lines of text -->
+        <svg viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet">
+          <circle class="s" cx="80" cy="110" r="58"/>
+          <line class="s" x1="80" y1="110" x2="80" y2="72"/>
+          <line class="s" x1="80" y1="110" x2="110" y2="110"/>
+          <line class="a" x1="165" y1="86" x2="215" y2="86"/>
+          <line class="a" x1="165" y1="110" x2="205" y2="110"/>
+          <line class="a" x1="165" y1="134" x2="215" y2="134"/>
+        </svg>
+      </div>
+      <div class="kicker">Why it matters</div>
+      <div class="headline smaller">Your dead minutes become first drafts.</div>
+      <div class="rule"></div>
+      <div class="body">Between clients, in the car, on a walk. You think out loud, it captures it. If you think faster than you type, this is for you.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+    <div class="counter">03 / 06</div>
+  </div>
+
+  <!-- SLIDE 4 — DO THIS -->
+  <div class="slide" id="slide-4">
+    <div class="content">
+      <div class="illo">
+        <!-- Phone with a mic -->
+        <svg viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet">
+          <rect class="s" x="78" y="24" width="84" height="172" rx="20"/>
+          <line class="s" x1="108" y1="42" x2="132" y2="42"/>
+          <rect class="fc" x="110" y="74" width="20" height="38" rx="10"/>
+          <path class="a" d="M98 104 C98 126, 142 126, 142 104"/>
+          <line class="a" x1="120" y1="126" x2="120" y2="142"/>
+          <line class="a" x1="108" y1="144" x2="132" y2="144"/>
+        </svg>
+      </div>
+      <div class="kicker">Do this first</div>
+      <div class="headline smaller">Tap the mic and just explain it.</div>
+      <div class="rule"></div>
+      <div class="body">Open ChatGPT, tap the mic, and talk through one caption like you are telling a friend. Then tighten the draft, that part stays yours.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+    <div class="counter">04 / 06</div>
+  </div>
+
+  <!-- SLIDE 5 — HONEST LIMITS -->
+  <div class="slide" id="slide-5">
+    <div class="content">
+      <div class="illo">
+        <!-- Privacy shield -->
+        <svg viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet">
+          <path class="s" d="M120 26 L186 52 V112 C186 158, 156 188, 120 202 C84 188, 54 158, 54 112 V52 Z"/>
+          <circle class="fc" cx="120" cy="102" r="15"/>
+          <path class="fc" d="M112 114 L128 114 L132 144 L108 144 Z"/>
+        </svg>
+      </div>
+      <div class="kicker">The honest part</div>
+      <div class="headline smaller">Keep client details out of it.</div>
+      <div class="rule"></div>
+      <div class="body">It writes how you talk, so the first pass rambles. And never say a client's name or health details out loud. Talk in general terms, fill the specifics in yourself.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+    <div class="counter">05 / 06</div>
+  </div>
+
+  <!-- SLIDE 6 — CTA -->
+  <div class="slide" id="slide-6">
+    <div class="content">
+      <div class="illo">
+        <!-- Bookmark + sound waves -->
+        <svg viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet">
+          <path class="s" d="M82 36 H150 V186 L116 156 L82 186 Z"/>
+          <path class="a" d="M176 82 C190 97, 190 123, 176 138"/>
+          <path class="a" d="M196 64 C218 90, 218 130, 196 156"/>
+        </svg>
+      </div>
+      <div class="headline smaller">Save this. Try it on one post this week.</div>
+      <div class="rule"></div>
+      <div class="body">Follow for the weekly what's new in AI, explained in plain English for owners.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+    <div class="counter">06 / 06</div>
+  </div>
+
+</body>
+</html>

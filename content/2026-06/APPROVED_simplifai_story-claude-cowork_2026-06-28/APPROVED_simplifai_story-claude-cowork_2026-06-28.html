@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — Story: Claude Cowork explained</title>
+  <link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e;
+      display: flex; flex-wrap: wrap; gap: 40px;
+      align-items: flex-start; justify-content: center;
+      padding: 40px;
+      font-family: var(--font-body);
+    }
+
+    /* 1080 x 1920 — 9:16 vertical story, always */
+    .slide {
+      width: 1080px; height: 1920px;
+      position: relative; overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    /* Safe zone: keep content clear of IG top (~230px) and bottom (~300px) UI */
+    .content {
+      position: absolute;
+      top: 230px; right: 96px; bottom: 320px; left: 96px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    .label {
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 30px;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .headline {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 104px;
+      line-height: 1.03;
+      letter-spacing: -0.025em;
+    }
+    .headline.sm { font-size: 88px; }
+
+    .body {
+      font-family: var(--font-body);
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 1.5;
+      margin-top: 44px;
+      max-width: 860px;
+    }
+
+    /* Accent: yellow hand-underline behind a word */
+    .u-yellow {
+      display: inline-block; position: relative;
+    }
+    .u-yellow::after {
+      content: ""; position: absolute;
+      left: -6px; right: -6px; bottom: 6px; height: 26px;
+      background: var(--color-yellow);
+      border-radius: 8px; z-index: -1; opacity: 0.9;
+    }
+
+    /* Accent: dot cluster */
+    .dots { display: flex; gap: 18px; margin-bottom: 40px; }
+    .dots span { width: 26px; height: 26px; border-radius: 50%; }
+
+    /* Accent: oversized asterisk */
+    .asterisk { font-size: 120px; line-height: 0.6; font-weight: 800;
+      font-family: var(--font-display); margin-bottom: 24px; }
+
+    /* List rows (frame 3) */
+    .list { margin-top: 56px; display: flex; flex-direction: column; gap: 38px; }
+    .row { display: flex; align-items: flex-start; gap: 28px; }
+    .check {
+      flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%;
+      background: var(--color-coral); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 800; margin-top: 4px;
+    }
+    .row p { font-family: var(--font-body); font-weight: 500;
+      font-size: 44px; line-height: 1.3; color: var(--color-text-primary); }
+
+    /* CTA pill (frame 5) */
+    .cta {
+      margin-top: 56px; align-self: flex-start;
+      background: var(--color-yellow); color: var(--color-text-primary);
+      font-family: var(--font-display); font-weight: 700; font-size: 40px;
+      padding: 28px 52px; border-radius: 9999px;
+    }
+
+    /* swipe hint */
+    .swipe {
+      position: absolute; left: 96px; bottom: 300px;
+      font-family: var(--font-body); font-weight: 600; font-size: 34px;
+      opacity: 0.85;
+    }
+
+    /* disclosure */
+    .disclosure {
+      position: absolute; left: 96px; bottom: 232px;
+      font-family: var(--font-body); font-weight: 500; font-size: 28px;
+    }
+
+    /* logo */
+    .logo {
+      position: absolute; left: 96px; bottom: 140px;
+      width: 300px; height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FRAME 1 — Purple Hero -->
+  <div class="slide" id="slide-1" style="background: var(--color-purple);">
+    <div class="content">
+      <div class="label" style="color: var(--color-yellow);">New in AI</div>
+      <div class="headline" style="color: #fff;">Meet Claude <span class="u-yellow">Cowork</span>.</div>
+      <div class="body" style="color: rgba(255,255,255,0.86);">AI that doesn't just answer your question. It does the actual work.</div>
+    </div>
+    <div class="swipe" style="color: rgba(255,255,255,0.9);">Swipe to see how &rarr;</div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+  </div>
+
+  <!-- FRAME 2 — Coral Hero -->
+  <div class="slide" id="slide-2" style="background: var(--color-coral);">
+    <div class="content">
+      <div class="dots">
+        <span style="background: var(--color-yellow);"></span>
+        <span style="background: rgba(255,255,255,0.85);"></span>
+        <span style="background: var(--color-yellow);"></span>
+      </div>
+      <div class="headline" style="color: #fff;">Chat tells you how. Cowork does it.</div>
+      <div class="body" style="color: rgba(255,255,255,0.90);">The old way: you copy answers out of a chat window. The new way: it works inside your own files and hands back the finished thing.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+  </div>
+
+  <!-- FRAME 3 — Light / Neutral -->
+  <div class="slide" id="slide-3" style="background: var(--color-bg);">
+    <div class="content">
+      <div class="label" style="color: var(--color-purple);">What it takes off your desk</div>
+      <div class="headline sm" style="color: var(--color-text-primary);">The jobs that eat your evenings.</div>
+      <div class="list">
+        <div class="row"><div class="check">&#10003;</div><p>Tidy a messy folder of files</p></div>
+        <div class="row"><div class="check">&#10003;</div><p>Turn ten documents into one report</p></div>
+        <div class="row"><div class="check">&#10003;</div><p>Pull the key points out of long contracts</p></div>
+        <div class="row"><div class="check">&#10003;</div><p>Run the same job on a schedule</p></div>
+      </div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+  </div>
+
+  <!-- FRAME 4 — Yellow Hero -->
+  <div class="slide" id="slide-4" style="background: var(--color-yellow);">
+    <div class="content">
+      <div class="asterisk" style="color: var(--color-coral);">&#10033;</div>
+      <div class="headline" style="color: var(--color-text-primary);">You stay the boss.</div>
+      <div class="body" style="color: #2a5f74;">Cowork does the legwork. The big decisions stay with you. It shines on the repeat work, not the judgment only you can bring.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+  </div>
+
+  <!-- FRAME 5 — Purple Hero (CTA) -->
+  <div class="slide" id="slide-5" style="background: var(--color-purple);">
+    <div class="content">
+      <div class="label" style="color: var(--color-yellow);">Where Simplifai comes in</div>
+      <div class="headline sm" style="color: #fff;">Knowing which jobs to <span class="u-yellow">hand it</span>.</div>
+      <div class="body" style="color: rgba(255,255,255,0.88);">That's the Stack: the workflows, the guardrails, and your brand voice kept yours. You bring the expertise. We bring the system.</div>
+      <div class="cta">Follow us to see it</div>
+    </div>
+    <div class="disclosure" style="color: rgba(255,255,255,0.72);">Made with AI, checked by a human.</div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+  </div>
+
+</body>
+</html>

@@ -2,14 +2,15 @@
 name: simplifai-trend-research
 description: >
   Research the latest AI-tool updates and translate them into trustworthy, owner-ready
-  Instagram content for Simplifai — the AI marketing company for small business owners.
-  Use this skill when asked to research what's new in AI, produce the weekly intel digest,
-  or turn a tool update into a content idea. Sweeps the curated source list, keeps only
-  verified shipped updates, and outputs a digest in research/digests/ plus a ready-to-build
-  carousel brief. This is the front end of Simplifai's research → carousel content engine.
+  Instagram content for Simplifai, the AI partner that helps health and wellness business
+  owners run their whole business with AI. Use this skill when asked to research what's new in
+  AI, produce the weekly intel digest, or turn a tool update into a content idea. Sweeps the
+  curated source list, keeps only verified shipped updates, and outputs a digest in
+  research/digests/ plus a ready-to-build carousel brief. This is the front end of Simplifai's
+  research → carousel content engine.
 user-invocable: true
 metadata:
-  version: 1.0.0
+  version: 2.2.0
 ---
 
 ## Maintenance Note
@@ -24,7 +25,11 @@ Simplifai earns authority by being **first to translate** what's new in AI for s
 
 **Inputs:** the curated watch list at [`research/sources/simplifai-ai-tool-sources.md`](../../research/sources/simplifai-ai-tool-sources.md).
 **Output:** a weekly digest at `research/digests/DRAFT_intel-digest_[YYYY-MM-DD].md`.
-**Topic scope (locked):** AI tool updates relevant to small-biz marketing. Not platform/algorithm trends, not general marketing tactics — unless they ride in on a tool update.
+**Topic scope — two boundaries:**
+- **Whole-business (the task):** AI tool updates that help an owner run *any* part of their business — marketing, but also customer service, sales, operations, admin, scheduling, finance, and everyday productivity. Marketing is one lane, not the boundary.
+- **Wellness-led (the audience):** Simplifai's home turf and deepest expertise is health and wellness owners. Judge each update first by whether a *wellness* owner can use it and frame the resulting content for them (a clinic's bookings, a coach's client comms, a supplement brand's CRM) — but a broadly useful update for any small owner still qualifies. Wellness is the lead lens, not a hard filter.
+
+Out of scope: platform/algorithm trends, generic business tactics, and developer/API-only or enterprise-gated changes — unless they ride in on a tool update an ordinary small owner can actually use.
 
 ---
 
@@ -39,12 +44,14 @@ Simplifai earns authority by being **first to translate** what's new in AI for s
 7. **Rank** by owner value and **map** each to a content format.
 8. **Write the digest** to `research/digests/DRAFT_intel-digest_[YYYY-MM-DD].md` using the template below.
 
-### The owner-value filter — "Does this help a non-marketer owner this week?"
-Keep an update only if a busy owner with no marketing background could **use it within a week**. Drop:
+### The owner-value filter — "Does this help a small owner (wellness first) run their business this week?"
+Keep an update only if a busy owner with no technical or marketing background — a wellness owner by default — could **use it within a week** in *some* part of their business (marketing, customer comms, sales, ops, admin, finance, or productivity). Drop:
 - Enterprise-only or paid-tier-gated features most solo owners can't reach.
 - Developer/API-only changes.
 - Research demos and "coming soon" with no ship date.
 - Pure hype, funding news, or model-benchmark chatter with no practical action.
+
+Aim for breadth across the lanes over a few weeks — if every digest is marketing-only, the sweep is too narrow.
 
 **Rumours and unconfirmed reports:** allowed in the digest only if explicitly flagged as *rumour / unconfirmed* — never carried forward into a published post as fact.
 
@@ -137,6 +144,6 @@ Write to `research/digests/DRAFT_intel-digest_[YYYY-MM-DD].md`:
 ## After the digest (handoff)
 
 1. Owner reviews the digest, picks 1–2 items.
-2. Build the carousel with [`simplifai-instagram-post.md`](simplifai-instagram-post.md) — check + log the scheme rotation, export PNGs via the Playwright pattern in [`content/drafts/`](../../content/drafts/).
-3. Write the caption (source named, AI disclosed, no em dashes), run the compliance check.
-4. DRAFT → APPROVED → publish.
+2. Build the carousel with [`simplifai-instagram-post.md`](simplifai-instagram-post.md) — check + log the scheme rotation, export PNGs with [`content/_scripts/export_slides.py`](../../content/_scripts/export_slides.py) into the post's `slides/` folder. Posts live in month folders: `content/[YYYY-MM]/DRAFT_simplifai_[type]_[YYYY-MM-DD]/`.
+3. Write the caption (source named, AI disclosed, no em dashes) into the same post folder, run the compliance check.
+4. DRAFT → APPROVED → PUBLISHED by renaming the post folder's status prefix in place.

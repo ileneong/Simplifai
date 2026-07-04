@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — What a system audit actually finds</title>
+  <link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e; /* dark preview surround */
+      display: flex; flex-wrap: wrap; gap: 40px;
+      align-items: flex-start; justify-content: center;
+      min-height: 100vh; padding: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* 1080×1350 — 4:5 ratio, always — Scheme B: Coral Hero */
+    .slide {
+      width: 1080px; height: 1350px;
+      position: relative; overflow: hidden;
+      background: #ff7a59; /* --color-coral */
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: absolute; inset: 0;
+      padding: 96px; /* --space-9 safe zone */
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    /* Kicker — small label, yellow, sits above the headline */
+    .kicker {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #ffc857; /* --color-yellow */
+      margin-bottom: 36px;
+    }
+
+    .headline {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 104px;
+      line-height: 1.03;
+      letter-spacing: -0.025em;
+      color: #ffffff; /* --color-white */
+      margin-bottom: 56px;
+    }
+    .headline.smaller { font-size: 84px; }
+
+    .rule {
+      width: 96px; height: 8px;
+      background: #ffc857; /* yellow */
+      border-radius: 4px;
+      margin-bottom: 44px;
+    }
+
+    .body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.88); /* Scheme B body */
+      max-width: 880px;
+    }
+    .body strong { color: #ffc857; font-weight: 700; }
+
+    /* Accent — dot cluster (one accent element, on the cover) */
+    .dots {
+      display: flex; gap: 22px;
+      margin-bottom: 48px;
+    }
+    .dots span {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: #ffc857; /* yellow */
+      display: inline-block;
+    }
+    .dots span:nth-child(4) { opacity: 0.6; }
+    .dots span:nth-child(5) { opacity: 0.35; }
+
+    /* Slide counter — bottom-right, subtle */
+    .counter {
+      position: absolute;
+      bottom: 104px; right: 96px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 0.04em;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 96px; left: 96px;
+      width: 280px; height: auto;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1 — HOOK -->
+  <div class="slide" id="slide-1">
+    <div class="content">
+      <div class="dots"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="headline">Six copies of the same tool. Nobody noticed.</div>
+      <div class="rule"></div>
+      <div class="body">What we found when we audited a client's setup, and why it matters for yours.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">01 / 06</div>
+  </div>
+
+  <!-- SLIDE 2 — WHAT AN AUDIT IS -->
+  <div class="slide" id="slide-2">
+    <div class="content">
+      <div class="kicker">First, what is an audit</div>
+      <div class="headline smaller">A spring clean for the tools you work in.</div>
+      <div class="rule"></div>
+      <div class="body">Systems get messy the same way a junk drawer does. Quietly, a little at a time. An audit is someone stopping to look at the whole thing at once.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">02 / 06</div>
+  </div>
+
+  <!-- SLIDE 3 — FINDING ONE -->
+  <div class="slide" id="slide-3">
+    <div class="content">
+      <div class="kicker">Finding one</div>
+      <div class="headline smaller">Every copy had drifted a little.</div>
+      <div class="rule"></div>
+      <div class="body">Six near identical versions of one tool, each tweaked over time. We replaced all of them with <strong>a single one</strong> that does the job for everyone.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">03 / 06</div>
+  </div>
+
+  <!-- SLIDE 4 — FINDING TWO -->
+  <div class="slide" id="slide-4">
+    <div class="content">
+      <div class="kicker">Finding two</div>
+      <div class="headline smaller">Two guides quietly disagreed.</div>
+      <div class="rule"></div>
+      <div class="body">Each one kept its own copy of the same instructions, and over months they grew apart. Now both point to <strong>one source</strong>, so they can never split again.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">04 / 06</div>
+  </div>
+
+  <!-- SLIDE 5 — FINDING THREE -->
+  <div class="slide" id="slide-5">
+    <div class="content">
+      <div class="kicker">Finding three</div>
+      <div class="headline smaller">Clutter nobody chose to keep.</div>
+      <div class="rule"></div>
+      <div class="body">Old files no one used, and junk getting saved on every change. We cleared it out and set a <strong>simple rule</strong> so it stops piling back up.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">05 / 06</div>
+  </div>
+
+  <!-- SLIDE 6 — CTA / LESSON -->
+  <div class="slide" id="slide-6">
+    <div class="content">
+      <div class="headline">One source of truth beats six drifting copies.</div>
+      <div class="rule"></div>
+      <div class="body">That is what an audit buys you. Less to maintain, fewer mistakes, a system you can actually trust. Save this for your next clean up.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">06 / 06</div>
+  </div>
+
+</body>
+</html>

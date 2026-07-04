@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — Claude ships ready-made workflows for small businesses</title>
+  <link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e; /* dark preview surround */
+      display: flex; flex-wrap: wrap; gap: 40px;
+      align-items: flex-start; justify-content: center;
+      min-height: 100vh; padding: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* 1080×1350 — 4:5 ratio, always — Scheme C: Purple Hero */
+    .slide {
+      width: 1080px; height: 1350px;
+      position: relative; overflow: hidden;
+      background: #8a4fff; /* --color-purple */
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: absolute; inset: 0;
+      padding: 96px; /* --space-9 safe zone */
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    /* Kicker — small label, yellow, sits above the headline */
+    .kicker {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #ffc857; /* --color-yellow */
+      margin-bottom: 36px;
+    }
+
+    .headline {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 100px;
+      line-height: 1.03;
+      letter-spacing: -0.025em;
+      color: #ffffff; /* --color-white */
+      margin-bottom: 56px;
+    }
+    .headline.smaller { font-size: 84px; }
+
+    .rule {
+      width: 96px; height: 8px;
+      background: #ffc857; /* yellow */
+      border-radius: 4px;
+      margin-bottom: 44px;
+    }
+
+    .body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.82); /* Scheme C body */
+      max-width: 880px;
+    }
+    .body strong { color: #ffc857; font-weight: 700; }
+
+    /* Accent — thick underline bar (solid yellow band beneath a key phrase) */
+    .barword {
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .barword::after {
+      content: '';
+      position: absolute;
+      left: -2px; right: -2px;
+      bottom: -14px;
+      height: 18px;
+      background: #ffc857; /* yellow */
+      border-radius: 9px;
+    }
+
+    /* Slide counter — bottom-right, subtle */
+    .counter {
+      position: absolute;
+      bottom: 104px; right: 96px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.04em;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 96px; left: 96px;
+      width: 280px; height: auto;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1 — HOOK -->
+  <div class="slide" id="slide-1">
+    <div class="content">
+      <div class="headline">Claude now ships <span class="barword">ready-made</span> workflows for small businesses.</div>
+      <div class="rule"></div>
+      <div class="body">And it asks you before it sends, posts, or pays.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">01 / 06</div>
+  </div>
+
+  <!-- SLIDE 2 — WHAT SHIPPED -->
+  <div class="slide" id="slide-2">
+    <div class="content">
+      <div class="kicker">What just shipped</div>
+      <div class="headline smaller">Claude for Small Business launched in May 2026.</div>
+      <div class="rule"></div>
+      <div class="body">Ready-made workflows for real jobs: the monthly books, cash forecasts, lead triage, campaign analysis and asset creation.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">02 / 06</div>
+  </div>
+
+  <!-- SLIDE 3 — HOW IT WORKS -->
+  <div class="slide" id="slide-3">
+    <div class="content">
+      <div class="kicker">How it works</div>
+      <div class="headline smaller">Connect your tools, pick the job, let Claude do it.</div>
+      <div class="rule"></div>
+      <div class="body">It plugs into what you already use, think <strong>Canva, HubSpot, Google Workspace</strong> and your accounting.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">03 / 06</div>
+  </div>
+
+  <!-- SLIDE 4 — THE PART THAT MATTERS -->
+  <div class="slide" id="slide-4">
+    <div class="content">
+      <div class="kicker">The part that matters</div>
+      <div class="headline smaller">It asks before it sends, posts, or pays.</div>
+      <div class="rule"></div>
+      <div class="body">You stay in control. The AI removes the busywork, and you approve every action before it leaves your hands.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">04 / 06</div>
+  </div>
+
+  <!-- SLIDE 5 — HONEST LIMITS -->
+  <div class="slide" id="slide-5">
+    <div class="content">
+      <div class="kicker">The honest part</div>
+      <div class="headline smaller">It needs a paid Claude plan, so start small.</div>
+      <div class="rule"></div>
+      <div class="body">It can only reach what you already can, so trust it on low-stakes jobs first. The training course that comes with it is free.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">05 / 06</div>
+  </div>
+
+  <!-- SLIDE 6 — CTA -->
+  <div class="slide" id="slide-6">
+    <div class="content">
+      <div class="headline"><span class="barword">Save</span> this for when you are ready to let AI do the work.</div>
+      <div class="rule"></div>
+      <div class="body">Follow for the plain English AI breakdown for small business owners.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+    <div class="counter">06 / 06</div>
+  </div>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Intel Digests
 
-Weekly "What's New in AI" digests produced by the [`simplifai-trend-research`](../../.claude/skills/simplifai-trend-research.md) skill.
+Weekly "What's New in AI" digests produced by the [`simplifai-trend-research`](../../.claude/skills/simplifai-trend-research.md) skill. Scope is **whole-business** (marketing, customer service, sales, operations, admin, scheduling, finance, productivity — not marketing alone), **health-and-wellness-led** (judge and frame each item for a wellness owner first, but broadly useful updates still qualify).
 
 - **Naming:** `DRAFT_intel-digest_[YYYY-MM-DD].md` (date = the Monday of the week).
 - **Source of truth for what to watch:** [`../sources/simplifai-ai-tool-sources.md`](../sources/simplifai-ai-tool-sources.md).

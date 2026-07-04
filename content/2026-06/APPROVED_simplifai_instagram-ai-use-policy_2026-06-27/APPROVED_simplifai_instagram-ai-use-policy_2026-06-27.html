@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — Your AI use policy fits on one page</title>
+  <link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e;
+      display: flex; flex-wrap: wrap; gap: 32px;
+      align-items: flex-start; justify-content: center;
+      padding: 40px;
+      font-family: var(--font-body);
+    }
+
+    /* 1080×1350 — 4:5, Scheme D Light/Neutral */
+    .slide {
+      width: 1080px; height: 1350px;
+      position: relative; overflow: hidden;
+      background: var(--color-bg); /* #f5f3ff */
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: absolute; inset: 0;
+      padding: 96px; /* --space-9 */
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    /* Corner bracket accent — the single recurring motif (purple) */
+    .bracket {
+      position: absolute;
+      width: 72px; height: 72px;
+      border-color: var(--color-purple);
+      border-style: solid;
+      border-width: 0;
+    }
+    .bracket.tl { top: 72px; left: 72px; border-top-width: 8px; border-left-width: 8px; }
+    .bracket.br { bottom: 72px; right: 72px; border-bottom-width: 8px; border-right-width: 8px; }
+
+    .kicker {
+      font-family: var(--font-body);
+      font-weight: var(--fw-bold);
+      font-size: 30px;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      color: var(--color-purple);
+      margin-bottom: 40px;
+    }
+
+    .headline {
+      font-family: var(--font-display);
+      font-weight: var(--fw-extrabold);
+      font-size: 88px;
+      line-height: 1.04;
+      letter-spacing: var(--tracking-tight);
+      color: var(--color-text-primary);
+      margin-bottom: 48px; /* --space-7 */
+    }
+    .headline.sm { font-size: 72px; }
+
+    .body {
+      font-family: var(--font-body);
+      font-weight: var(--fw-regular);
+      font-size: 42px;
+      line-height: var(--leading-relaxed);
+      color: var(--color-text-secondary);
+      max-width: 870px;
+    }
+
+    /* progress dots */
+    .progress {
+      position: absolute;
+      bottom: 104px; right: 96px;
+      display: flex; gap: 12px;
+    }
+    .progress span {
+      width: 14px; height: 14px; border-radius: 9999px;
+      background: rgba(138, 79, 255, 0.22);
+    }
+    .progress span.on { background: var(--color-purple); }
+
+    .logo {
+      position: absolute;
+      bottom: 92px; left: 96px;
+      width: 240px; height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1 — Cover -->
+  <div class="slide" id="slide-1">
+    <div class="bracket tl"></div>
+    <div class="bracket br"></div>
+    <div class="content">
+      <div class="kicker">AI, responsibly</div>
+      <div class="headline">Your AI use policy fits on one page.</div>
+      <div class="body">Before you scale AI in your business, write down the rules. It takes about ten honest lines.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.png" alt="Simplifai">
+    <div class="progress"><span class="on"></span><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- SLIDE 2 — Why -->
+  <div class="slide" id="slide-2">
+    <div class="bracket tl"></div>
+    <div class="bracket br"></div>
+    <div class="content">
+      <div class="kicker">Why it matters</div>
+      <div class="headline">Trust is the new differentiator.</div>
+      <div class="body">Customers and staff want to know how you use AI. A clear policy turns a quiet worry into a visible sign of credibility.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.png" alt="Simplifai">
+    <div class="progress"><span></span><span class="on"></span><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- SLIDE 3 — Line 1 -->
+  <div class="slide" id="slide-3">
+    <div class="bracket tl"></div>
+    <div class="bracket br"></div>
+    <div class="content">
+      <div class="kicker">Line 1</div>
+      <div class="headline">What you actually use AI for.</div>
+      <div class="body">Name the jobs. Drafting captions, summarising notes, first-pass research. Clarity here keeps your whole team aligned.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.png" alt="Simplifai">
+    <div class="progress"><span></span><span></span><span class="on"></span><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- SLIDE 4 — Line 2 -->
+  <div class="slide" id="slide-4">
+    <div class="bracket tl"></div>
+    <div class="bracket br"></div>
+    <div class="content">
+      <div class="kicker">Line 2</div>
+      <div class="headline">What never goes in.</div>
+      <div class="body">List the data that stays out of every model. Customer details, payment info, anything private or regulated. This line protects you most.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.png" alt="Simplifai">
+    <div class="progress"><span></span><span></span><span></span><span class="on"></span><span></span><span></span></div>
+  </div>
+
+  <!-- SLIDE 5 — Lines 3 and 4 -->
+  <div class="slide" id="slide-5">
+    <div class="bracket tl"></div>
+    <div class="bracket br"></div>
+    <div class="content">
+      <div class="kicker">Lines 3 and 4</div>
+      <div class="headline sm">Who checks it, and how you tell people.</div>
+      <div class="body">Name who reviews AI output before it ships. Then decide how you disclose AI involvement to your customers.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.png" alt="Simplifai">
+    <div class="progress"><span></span><span></span><span></span><span></span><span class="on"></span><span></span></div>
+  </div>
+
+  <!-- SLIDE 6 — Close -->
+  <div class="slide" id="slide-6">
+    <div class="bracket tl"></div>
+    <div class="bracket br"></div>
+    <div class="content">
+      <div class="kicker">Your move</div>
+      <div class="headline sm">Ten honest lines beat a perfect policy you never write.</div>
+      <div class="body">Open a doc today and draft yours. Save this post as your checklist.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.png" alt="Simplifai">
+    <div class="progress"><span></span><span></span><span></span><span></span><span></span><span class="on"></span></div>
+  </div>
+
+</body>
+</html>

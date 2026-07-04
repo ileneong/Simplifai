@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simplifai — 60 prompts for the jobs your business repeats every week</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --coral:#ff7a59; --coral-dark:#e55e3d;
+  --purple:#8a4fff; --purple-dark:#6a2fe0;
+  --yellow:#ffc857; --yellow-dark:#e0a830;
+  --bg:#f5f3ff; --ink:#1a1a2e; --ink2:#5a5a7a; --muted:#9999b8; --white:#fff;
+  --border:rgba(138,79,255,0.15);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact;background:var(--white);}
+
+@page{size:A4;margin:15mm 14mm;}
+@page cover{margin:0;}
+
+/* ---------- COVER ---------- */
+.cover{
+  page:cover; width:210mm; height:297mm; break-after:page;
+  background:linear-gradient(155deg,#8a4fff 0%,#6a2fe0 100%);
+  color:var(--white); padding:78px 66px 66px; position:relative; overflow:hidden;
+  display:flex; flex-direction:column; justify-content:space-between;
+}
+.cover .ast{position:absolute; top:40px; right:52px; font-family:'Poppins',sans-serif; font-weight:800; font-size:230px; line-height:.7; color:var(--yellow); opacity:.92;}
+.cover-logo{width:200px; height:auto; position:relative; z-index:1;}
+.cover-mid{position:relative; z-index:1;}
+.cover-tag{font-weight:700; text-transform:uppercase; letter-spacing:0.16em; font-size:12px; color:var(--yellow); margin-bottom:22px;}
+.cover h1{font-family:'Poppins',sans-serif; font-weight:800; font-size:58px; line-height:1.02; letter-spacing:-0.02em;}
+.cover .sub{font-size:18px; line-height:1.55; margin-top:26px; max-width:520px; color:rgba(255,255,255,0.92);}
+.cover-foot{position:relative; z-index:1; font-size:14px; color:rgba(255,255,255,0.8); font-weight:500;}
+
+/* ---------- GENERIC ---------- */
+.page{break-before:page;}
+.pad-top{padding-top:6px;}
+
+.eyebrow{font-weight:700; text-transform:uppercase; letter-spacing:0.12em; font-size:12px; color:var(--purple); margin-bottom:12px;}
+h2.big{font-family:'Poppins',sans-serif; font-weight:800; font-size:34px; line-height:1.05; letter-spacing:-0.02em; color:var(--ink);}
+
+/* ---------- HOW TO USE ---------- */
+.howto .lead{font-size:17px; line-height:1.6; color:var(--ink2); margin:18px 0 26px; max-width:560px;}
+.howto ol{list-style:none; counter-reset:h; display:flex; flex-direction:column; gap:16px; max-width:600px;}
+.howto li{counter-increment:h; position:relative; padding:16px 18px 16px 58px; background:var(--bg); border-radius:14px; border:1px solid var(--border);}
+.howto li::before{content:counter(h); position:absolute; left:16px; top:15px; width:28px; height:28px; border-radius:50%; background:var(--purple); color:#fff; font-family:'Poppins',sans-serif; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center;}
+.howto li b{color:var(--ink); font-weight:700;}
+.howto li span{color:var(--ink2); font-weight:500; font-size:15px; line-height:1.5;}
+.rule-callout{margin-top:24px; max-width:600px; background:#fff3ef; border:1px solid rgba(255,122,89,0.35); border-left:6px solid var(--coral); border-radius:12px; padding:18px 22px;}
+.rule-callout .k{font-family:'Poppins',sans-serif; font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.08em; color:var(--coral-dark); margin-bottom:6px;}
+.rule-callout p{font-size:15px; line-height:1.55; color:var(--ink);}
+.code-inline{font-family:'JetBrains Mono',monospace; font-size:13px; background:var(--bg); color:var(--purple-dark); padding:2px 7px; border-radius:6px;}
+
+/* ---------- WORKFLOW SECTIONS ---------- */
+.workflow{break-before:page;}
+.wf-head{display:flex; gap:20px; align-items:flex-start; padding-bottom:22px; margin-bottom:26px; border-bottom:2px solid var(--border);}
+.wf-num{flex:0 0 auto; width:54px; height:54px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:800; font-size:22px; color:#fff;}
+.wf-label{font-weight:700; text-transform:uppercase; letter-spacing:0.14em; font-size:11px; margin-bottom:5px;}
+.wf-title{font-family:'Poppins',sans-serif; font-weight:800; font-size:30px; line-height:1.05; letter-spacing:-0.02em; color:var(--ink);}
+.wf-sub{font-size:15px; line-height:1.5; color:var(--ink2); margin-top:6px; max-width:560px;}
+
+.prompt{display:flex; gap:14px; break-inside:avoid; page-break-inside:avoid; margin-bottom:16px;}
+.pnum{flex:0 0 auto; font-family:'Poppins',sans-serif; font-weight:800; font-size:15px; width:26px; text-align:right; padding-top:1px;}
+.pmain{flex:1;}
+.ptitle{font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:16px; color:var(--ink); margin-bottom:7px;}
+.pcode{font-family:'JetBrains Mono',monospace; font-weight:400; font-size:12.5px; line-height:1.62; color:#2b2540; background:var(--bg); border-radius:10px; padding:13px 16px; border-left:4px solid var(--coral);}
+
+/* accent variants */
+.a-coral  .wf-num{background:var(--coral);}   .a-coral  .wf-label{color:var(--coral-dark);}   .a-coral  .pnum{color:var(--coral);}   .a-coral  .pcode{border-left-color:var(--coral);}
+.a-purple .wf-num{background:var(--purple);}  .a-purple .wf-label{color:var(--purple-dark);}  .a-purple .pnum{color:var(--purple);}  .a-purple .pcode{border-left-color:var(--purple);}
+.a-yellow .wf-num{background:var(--yellow); color:#5a4415;} .a-yellow .wf-label{color:var(--yellow-dark);} .a-yellow .pnum{color:var(--yellow-dark);} .a-yellow .pcode{border-left-color:var(--yellow);}
+
+/* ---------- CLOSING ---------- */
+.closing{break-before:page; height:250mm; display:flex; flex-direction:column; justify-content:center; align-items:flex-start;}
+.closing .mark{font-family:'Poppins',sans-serif; font-weight:800; font-size:120px; line-height:.7; color:var(--coral); margin-bottom:28px;}
+.closing p{font-size:18px; line-height:1.6; color:var(--ink2); max-width:540px; margin-bottom:18px;}
+.closing .sign{font-family:'Poppins',sans-serif; font-weight:800; font-size:26px; color:var(--ink);}
+.closing .sign span{color:var(--coral);}
+.closing .tag{font-size:15px; color:var(--ink2); margin-top:6px;}
+.closing img{width:180px; margin-top:40px;}
+</style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<section class="cover">
+  <div class="ast">*</div>
+  <img class="cover-logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+  <div class="cover-mid">
+    <div class="cover-tag">The Simplifai Stack · Prompt Library</div>
+    <h1>60 prompts for the jobs your business repeats every week</h1>
+    <p class="sub">Ten prompts each for the six workflows every small business runs on: customer support, lead generation, feedback and reviews, content and social, bookings, and follow-ups.</p>
+  </div>
+  <div class="cover-foot">You bring the expertise. We bring the system.</div>
+</section>
+
+<!-- ===================== HOW TO USE ===================== -->
+<section class="page howto">
+  <div class="eyebrow">Start here</div>
+  <h2 class="big">How to use this guide</h2>
+  <p class="lead">A good prompt does not replace your judgement. It gets you to a first draft in minutes, so you are editing, not staring at a blank page.</p>
+  <ol>
+    <li><b>Copy the prompt. Fill in the brackets.</b> <span>Anything in <span class="code-inline">[square brackets]</span> is your bit. The more real detail you give, the better the draft.</span></li>
+    <li><b>Treat every output as a first draft.</b> <span>You are the expert. The prompt gets you started; you make the final call on what goes out.</span></li>
+    <li><b>Keep your voice.</b> <span>Where a prompt asks for "my voice," paste two or three things you have actually written so the AI can match how you sound.</span></li>
+    <li><b>Make them yours.</b> <span>Change the wording, tighten the constraints, combine two prompts. These are starting points, not rules.</span></li>
+  </ol>
+  <div class="rule-callout">
+    <div class="k">One rule above all</div>
+    <p>Never paste a customer's name or personal details into an AI tool. Strip the personal bits first and keep it about the task. Credible beats fast, every time.</p>
+  </div>
+</section>
+
+<!-- ===================== 1. CUSTOMER SUPPORT ===================== -->
+<section class="workflow a-coral">
+  <div class="wf-head">
+    <div class="wf-num">01</div>
+    <div><div class="wf-label">Workflow</div><div class="wf-title">Customer support</div><div class="wf-sub">The same questions, answered well, without you retyping them.</div></div>
+  </div>
+  <div class="prompt"><div class="pnum">1</div><div class="pmain"><div class="ptitle">Draft a reply to a common question</div><div class="pcode">"A customer asked: [paste their message]. Here is how I usually handle this: [paste a past reply or the key facts]. Write a clear, friendly reply in my voice that answers them fully and ends with a helpful next step. Under 120 words, no jargon."</div></div></div>
+  <div class="prompt"><div class="pnum">2</div><div class="pmain"><div class="ptitle">Calm down a frustrated message</div><div class="pcode">"A customer sent this, and they are upset: [paste message, names removed]. Write a calm, fair reply that acknowledges how they feel, takes responsibility where it is fair to, and offers a concrete way forward. Warm, not defensive, no over apologising."</div></div></div>
+  <div class="prompt"><div class="pnum">3</div><div class="pmain"><div class="ptitle">Explain a policy without sounding cold</div><div class="pcode">"I need to explain this policy to a customer: [paste the policy]. Rewrite it as a short, warm message that makes the reason clear and does not sound like fine print. 3 to 4 sentences, my voice."</div></div></div>
+  <div class="prompt"><div class="pnum">4</div><div class="pmain"><div class="ptitle">Write a holding reply</div><div class="pcode">"A customer needs an answer I cannot give yet because [reason]. Write a short holding reply that acknowledges their message, sets a realistic expectation for when I will get back to them, and reassures them it is in hand. 3 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">5</div><div class="pmain"><div class="ptitle">Turn one good answer into a template</div><div class="pcode">"Here is a reply I wrote that worked well: [paste it]. Turn it into a reusable template with [brackets] where the details change, so I can adapt it in seconds next time. Keep the tone exactly as it is."</div></div></div>
+  <div class="prompt"><div class="pnum">6</div><div class="pmain"><div class="ptitle">Simplify a complex explanation</div><div class="pcode">"I need to explain [complex thing] to a customer who is not an expert. Here is the detail: [paste it]. Rewrite it in plain language a busy person can understand on the first read. Short sentences, no jargon, one clear takeaway."</div></div></div>
+  <div class="prompt"><div class="pnum">7</div><div class="pmain"><div class="ptitle">Say no, kindly</div><div class="pcode">"A customer asked for [request] and I need to decline because [reason]. Write a reply that says no clearly but warmly, explains briefly, and offers an alternative if there is one. Respectful, not apologetic to the point of sounding unsure."</div></div></div>
+  <div class="prompt"><div class="pnum">8</div><div class="pmain"><div class="ptitle">Apologise and fix a mistake</div><div class="pcode">"We got something wrong: [what happened]. Write a short message that owns the mistake plainly, says what we are doing to fix it, and does not make excuses. Sincere, specific, my voice."</div></div></div>
+  <div class="prompt"><div class="pnum">9</div><div class="pmain"><div class="ptitle">Build an FAQ from your inbox</div><div class="pcode">"Here are questions customers ask me over and over: [list 8 to 12]. Draft a clear, on brand answer for each, 2 to 3 sentences. Flag any answer I should double check against my actual terms before publishing."</div></div></div>
+  <div class="prompt"><div class="pnum">10</div><div class="pmain"><div class="ptitle">Write an after-hours auto-reply</div><div class="pcode">"Write an out-of-office / after-hours auto-reply for my [business type] in my voice. It should set expectations for when I will respond, point them to [where to find quick info], and still feel human, not robotic. Under 60 words."</div></div></div>
+</section>
+
+<!-- ===================== 2. LEAD GENERATION ===================== -->
+<section class="workflow a-purple">
+  <div class="wf-head">
+    <div class="wf-num">02</div>
+    <div><div class="wf-label">Workflow</div><div class="wf-title">Lead generation</div><div class="wf-sub">Enquiries captured and moved forward, not lost in the inbox.</div></div>
+  </div>
+  <div class="prompt"><div class="pnum">1</div><div class="pmain"><div class="ptitle">Qualify an enquiry</div><div class="pcode">"A new lead sent this: [paste enquiry]. Write a friendly reply that answers what I can, and asks the 2 or 3 questions I need to know whether we are a fit and to give them a real answer. Do not interrogate, keep it warm."</div></div></div>
+  <div class="prompt"><div class="pnum">2</div><div class="pmain"><div class="ptitle">Reply to "how much do you charge?"</div><div class="pcode">"Someone asked what I charge for [service]. Here is how my pricing works: [paste the basics]. Write a reply that gives them a genuine sense of cost, explains what shapes the price, and invites them to the next step. No dodging the question, no hard sell."</div></div></div>
+  <div class="prompt"><div class="pnum">3</div><div class="pmain"><div class="ptitle">Move a vague enquiry to a booked call</div><div class="pcode">"A lead is interested but vague: [paste message]. Write a reply that shows I understood them, offers one clear next step (a short call or a booking), and makes it easy to say yes. 4 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">4</div><div class="pmain"><div class="ptitle">Write a short intro about what you do</div><div class="pcode">"Write me three versions of a short intro I can send a new lead who asks what I do. I am a [what you do] for [who you serve], and what makes me different is [your edge]. Plain, confident, no buzzwords. One sentence, two sentence, and short paragraph versions."</div></div></div>
+  <div class="prompt"><div class="pnum">5</div><div class="pmain"><div class="ptitle">First nudge to a quiet lead</div><div class="pcode">"A lead went quiet after showing interest in [service]. Write a light, no pressure follow up that adds a little value or reassurance rather than just chasing. 3 sentences, easy to reply to."</div></div></div>
+  <div class="prompt"><div class="pnum">6</div><div class="pmain"><div class="ptitle">Sketch a lead magnet</div><div class="pcode">"I want a simple free resource to attract [who you serve]. Give me 5 lead magnet ideas that solve a real, specific problem for them, and for the strongest one, outline what it would include. Practical, not fluffy."</div></div></div>
+  <div class="prompt"><div class="pnum">7</div><div class="pmain"><div class="ptitle">Keep a waitlist warm</div><div class="pcode">"I am fully booked and have a waitlist for [service]. Write a message for people on it that is honest about the wait, keeps them feeling valued, and gives them one thing to do in the meantime. Warm, not apologetic."</div></div></div>
+  <div class="prompt"><div class="pnum">8</div><div class="pmain"><div class="ptitle">Sort a batch of enquiries</div><div class="pcode">"Here are recent enquiries: [paste them, names removed]. Sort them into hot, warm, and cold based on how ready they seem to buy, and for each give me the one next action I should take. Short and practical."</div></div></div>
+  <div class="prompt"><div class="pnum">9</div><div class="pmain"><div class="ptitle">Ask a happy customer for a referral</div><div class="pcode">"I want to ask a happy customer to refer people like them. They came to me for [what you did]. Write a warm, specific referral ask that makes it easy and does not feel grabby. 3 to 4 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">10</div><div class="pmain"><div class="ptitle">Sharpen your one-liner</div><div class="pcode">"Help me write the one line that goes in my bio and introductions. I help [who] do [what] so they can [outcome]. Give me 5 versions, each under 15 words, plain and specific, no clichés like 'take your business to the next level.'"</div></div></div>
+</section>
+
+<!-- ===================== 3. FEEDBACK AND REVIEWS ===================== -->
+<section class="workflow a-yellow">
+  <div class="wf-head">
+    <div class="wf-num">03</div>
+    <div><div class="wf-label">Workflow</div><div class="wf-title">Feedback and reviews</div><div class="wf-sub">The polite ask that goes out without you remembering, and what to do with the answers.</div></div>
+  </div>
+  <div class="prompt"><div class="pnum">1</div><div class="pmain"><div class="ptitle">Ask for a review at the right moment</div><div class="pcode">"A customer just had a good experience with [what you did]. Write a short, warm message asking for a review that makes it easy for them (tell them roughly what to mention and where to leave it). No pressure, my voice."</div></div></div>
+  <div class="prompt"><div class="pnum">2</div><div class="pmain"><div class="ptitle">Reply to a great review</div><div class="pcode">"A customer left this positive review: [paste it]. Write a warm, genuine reply that thanks them specifically, without sounding copy pasted. 2 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">3</div><div class="pmain"><div class="ptitle">Reply to a critical review</div><div class="pcode">"A customer left this critical review: [paste it]. Write a calm, professional public reply that takes it seriously, does not get defensive, and offers to make it right offline. Short, human, no corporate tone."</div></div></div>
+  <div class="prompt"><div class="pnum">4</div><div class="pmain"><div class="ptitle">Turn a happy message into a testimonial</div><div class="pcode">"A customer sent me this kind message: [paste it]. Draft a short testimonial I could use with their permission, keeping their words and meaning intact. Also write me a one line message asking their permission to share it."</div></div></div>
+  <div class="prompt"><div class="pnum">5</div><div class="pmain"><div class="ptitle">Build a quick feedback survey</div><div class="pcode">"Write me 5 short questions to ask customers after [service] to find out what is working and what to improve. Mix of quick ratings and one open question. Plain wording, nothing leading."</div></div></div>
+  <div class="prompt"><div class="pnum">6</div><div class="pmain"><div class="ptitle">Find the themes in your reviews</div><div class="pcode">"Here are recent reviews and comments: [paste 10 to 20, names removed]. Pull out the themes: what people love, what frustrates them, and the exact phrases they use. Quote, do not paraphrase. Group into a short summary I can act on."</div></div></div>
+  <div class="prompt"><div class="pnum">7</div><div class="pmain"><div class="ptitle">Turn a review into a post</div><div class="pcode">"Here is a review I have permission to share: [paste it]. Turn it into a short social post that leads with the customer's own words and adds a line of context. Keep it honest, no exaggeration, my voice."</div></div></div>
+  <div class="prompt"><div class="pnum">8</div><div class="pmain"><div class="ptitle">Win back an unhappy customer</div><div class="pcode">"A customer had a poor experience: [what happened]. Write a private message that acknowledges it sincerely, offers a fair way to make it right, and leaves the door open without grovelling. Warm and specific."</div></div></div>
+  <div class="prompt"><div class="pnum">9</div><div class="pmain"><div class="ptitle">Ask why someone didn't book</div><div class="pcode">"Someone enquired but did not go ahead. Write a short, low pressure message asking, if they are open to it, what held them back. Make clear I genuinely want to learn, not to sell them again. 2 to 3 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">10</div><div class="pmain"><div class="ptitle">Make a repeatable review-request template</div><div class="pcode">"Build me a review-request template I can send after every [job or service], with [brackets] for the personal detail. Warm, specific, easy to say yes to. Include a shorter follow up version for people who do not reply the first time."</div></div></div>
+</section>
+
+<!-- ===================== 4. CONTENT AND SOCIAL ===================== -->
+<section class="workflow a-coral">
+  <div class="wf-head">
+    <div class="wf-num">04</div>
+    <div><div class="wf-label">Workflow</div><div class="wf-title">Content and social</div><div class="wf-sub">A week of content started, not a blank page.</div></div>
+  </div>
+  <div class="prompt"><div class="pnum">1</div><div class="pmain"><div class="ptitle">Plan a month of posts</div><div class="pcode">"Act as my content planner. I am a [what you do] for [who you serve]. Give me 12 post ideas for 4 weeks, each mapped to one job: teach something useful, build trust, or invite people to work with me. Realistic for posting twice a week in my voice."</div></div></div>
+  <div class="prompt"><div class="pnum">2</div><div class="pmain"><div class="ptitle">Turn one idea into a week</div><div class="pcode">"Here is one thing I want to say: [paste idea]. Repurpose it into a 6 slide carousel outline, a 30 second video script, and 3 caption hooks. Keep my voice consistent across all three."</div></div></div>
+  <div class="prompt"><div class="pnum">3</div><div class="pmain"><div class="ptitle">Write a caption in your voice</div><div class="pcode">"Using this voice: [paste 3 things I have written], write a caption about [topic]. 5 short sentences, second person, one idea, end with a question. No hashtags, no em dashes."</div></div></div>
+  <div class="prompt"><div class="pnum">4</div><div class="pmain"><div class="ptitle">Turn a customer question into a post</div><div class="pcode">"Customers keep asking me: [paste question]. Turn my answer into a helpful post that teaches without giving everything away and shows I know my stuff. Include a hook and a soft call to action. My voice."</div></div></div>
+  <div class="prompt"><div class="pnum">5</div><div class="pmain"><div class="ptitle">Draft five hooks</div><div class="pcode">"Write me 5 different opening lines for a post about [topic] aimed at [who you serve]. Each should stop the scroll and read well at thumbnail size. No fearmongering, no 'you're falling behind.' Specific and honest."</div></div></div>
+  <div class="prompt"><div class="pnum">6</div><div class="pmain"><div class="ptitle">Testimonial into a carousel</div><div class="pcode">"Here is a testimonial I have permission to share: [paste it]. Outline a 6 slide carousel that builds from the problem the customer had to the result, in a way that teaches the reader something too. Keep it truthful, no invented numbers."</div></div></div>
+  <div class="prompt"><div class="pnum">7</div><div class="pmain"><div class="ptitle">Short video script</div><div class="pcode">"Write me a 30 to 45 second video script about [topic] for [who you serve]. Hook in the first line, one clear point, one takeaway, and a spoken call to action at the end. Conversational, the way I would actually say it."</div></div></div>
+  <div class="prompt"><div class="pnum">8</div><div class="pmain"><div class="ptitle">Batch a week of Stories</div><div class="pcode">"Give me 7 simple Story ideas for this week that keep me visible without much effort: a mix of behind the scenes, a quick tip, a question for my audience, and a soft offer. One line brief for each."</div></div></div>
+  <div class="prompt"><div class="pnum">9</div><div class="pmain"><div class="ptitle">Repurpose an email or blog</div><div class="pcode">"Here is something longer I already wrote: [paste it]. Pull out 3 social posts hidden inside it, each with its own angle and hook. Keep my voice, and do not just chop it up, make each stand on its own."</div></div></div>
+  <div class="prompt"><div class="pnum">10</div><div class="pmain"><div class="ptitle">Set your content pillars</div><div class="pcode">"Help me define 4 or 5 content pillars for my [business type] so I am not guessing what to post. For each pillar, give a one line description and 3 example post ideas that fit it. Grounded in what my customers actually care about."</div></div></div>
+</section>
+
+<!-- ===================== 5. BOOKINGS ===================== -->
+<section class="workflow a-purple">
+  <div class="wf-head">
+    <div class="wf-num">05</div>
+    <div><div class="wf-label">Workflow</div><div class="wf-title">Bookings</div><div class="wf-sub">Confirmations and reminders that send themselves, in your voice.</div></div>
+  </div>
+  <div class="prompt"><div class="pnum">1</div><div class="pmain"><div class="ptitle">Booking confirmation</div><div class="pcode">"Write a booking confirmation message for a customer who just booked [service] for [when]. Confirm the key details, tell them anything they need to do or bring, and set a warm tone. Under 80 words, my voice."</div></div></div>
+  <div class="prompt"><div class="pnum">2</div><div class="pmain"><div class="ptitle">A reminder that reduces no-shows</div><div class="pcode">"Write a friendly reminder to send [X hours or days] before an appointment for [service]. Confirm the time, make it easy to reschedule if they truly cannot make it, and gently note why turning up matters. Warm, not naggy."</div></div></div>
+  <div class="prompt"><div class="pnum">3</div><div class="pmain"><div class="ptitle">Handle a reschedule or cancellation</div><div class="pcode">"A customer needs to reschedule or cancel [appointment]. Write a reply that makes it easy, restates my policy on [notice or fees] kindly, and offers the next available options. No guilt trip."</div></div></div>
+  <div class="prompt"><div class="pnum">4</div><div class="pmain"><div class="ptitle">Pre-appointment prep</div><div class="pcode">"Write a short message to send before [service] telling the customer how to prepare and what to expect, so they turn up ready. Clear, reassuring, bullet points if it helps. My voice."</div></div></div>
+  <div class="prompt"><div class="pnum">5</div><div class="pmain"><div class="ptitle">Waitlist update</div><div class="pcode">"Write a message updating someone on my waitlist for [service]. Be honest about where they stand, keep them feeling valued, and tell them the one thing that happens next. Warm, 3 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">6</div><div class="pmain"><div class="ptitle">Turn services into a clear booking menu</div><div class="pcode">"Here are the services I offer: [list them with rough prices and times]. Turn this into a clear, easy to scan booking menu a customer can choose from without confusion. Plain names, one line each on what they get."</div></div></div>
+  <div class="prompt"><div class="pnum">7</div><div class="pmain"><div class="ptitle">Explain deposits or payment terms</div><div class="pcode">"I want to introduce [a deposit / payment terms] for bookings because [reason]. Write a short, friendly explanation customers will read at booking that makes the reason clear and feels fair, not corporate. 3 to 4 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">8</div><div class="pmain"><div class="ptitle">Group or class booking</div><div class="pcode">"Write a message for people booking into [a group session or class] on [date]. Cover the essentials (time, place, what to bring), build a little anticipation, and keep it warm and simple. Under 90 words."</div></div></div>
+  <div class="prompt"><div class="pnum">9</div><div class="pmain"><div class="ptitle">No-show follow-up</div><div class="pcode">"A customer missed their appointment for [service] without cancelling. Write a message that checks they are okay, avoids blame, and makes it easy to rebook. Kind first, practical second. 3 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">10</div><div class="pmain"><div class="ptitle">What to expect after booking</div><div class="pcode">"Write a 'what happens next' note to send right after someone books [service] for the first time, so they feel looked after. Walk them through the steps in plain language, reassure any nerves, and sound like a person, not a system."</div></div></div>
+</section>
+
+<!-- ===================== 6. FOLLOW-UPS ===================== -->
+<section class="workflow a-yellow">
+  <div class="wf-head">
+    <div class="wf-num">06</div>
+    <div><div class="wf-label">Workflow</div><div class="wf-title">Follow-ups</div><div class="wf-sub">The quote, the invoice, the check-in that usually slips.</div></div>
+  </div>
+  <div class="prompt"><div class="pnum">1</div><div class="pmain"><div class="ptitle">Thank you after a first purchase</div><div class="pcode">"Write a warm thank you to send after a customer's first [purchase or visit]. Make them feel genuinely appreciated, set up what to expect next, and keep it short. My voice, no upselling in this one."</div></div></div>
+  <div class="prompt"><div class="pnum">2</div><div class="pmain"><div class="ptitle">Chase an unpaid invoice, politely</div><div class="pcode">"An invoice for [what it was for] is [X days] overdue. Write a polite, professional reminder that assumes the best, makes it easy to pay, and keeps the relationship warm. Firm but friendly, no passive aggression."</div></div></div>
+  <div class="prompt"><div class="pnum">3</div><div class="pmain"><div class="ptitle">Follow up on a quote</div><div class="pcode">"I sent a quote for [work] and have not heard back. Write a follow up that checks it landed, offers to answer any questions, and gently invites a decision without pressure. 3 to 4 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">4</div><div class="pmain"><div class="ptitle">Check in after delivery</div><div class="pcode">"A customer received [product or service] recently. Write a short check in to make sure they are happy, invite any questions, and open the door to the next step if it is natural. Caring, not salesy."</div></div></div>
+  <div class="prompt"><div class="pnum">5</div><div class="pmain"><div class="ptitle">Re-engage a quiet customer</div><div class="pcode">"A past customer has not been in touch for a while. They previously came to me for [what]. Write a warm win back message that acknowledges the gap without guilt and offers one easy reason to come back. 4 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">6</div><div class="pmain"><div class="ptitle">Ask for the next booking at the right time</div><div class="pcode">"Based on when they last used [service], it is about time [customer] booked again. Write a helpful nudge that frames rebooking as looking after themselves or their business, with one clear way to book. Warm, low pressure."</div></div></div>
+  <div class="prompt"><div class="pnum">7</div><div class="pmain"><div class="ptitle">A "just checking this landed" nudge</div><div class="pcode">"I sent [something] and want to make sure it did not get lost. Write a light, one line friendly nudge that is easy to reply to and does not sound impatient."</div></div></div>
+  <div class="prompt"><div class="pnum">8</div><div class="pmain"><div class="ptitle">Seasonal or occasion check-in</div><div class="pcode">"Write a short, genuine check in I can send customers around [season or occasion] that is warm and human, not a thinly disguised sales pitch. It can mention [offer] lightly at the end, or not at all. My voice."</div></div></div>
+  <div class="prompt"><div class="pnum">9</div><div class="pmain"><div class="ptitle">Turn a one-off into a repeat</div><div class="pcode">"A customer bought [one-off thing] once and has not returned. Write a message that reminds them of the value they got and suggests a natural next thing, without being pushy. 3 to 4 sentences."</div></div></div>
+  <div class="prompt"><div class="pnum">10</div><div class="pmain"><div class="ptitle">Build a simple follow-up sequence</div><div class="pcode">"Design me a simple follow up sequence after a customer's first [purchase or service]: what to send and roughly when, over the following month, to thank them, check in, and invite them back. 4 or 5 steps, one line each on the message and timing. Keep it human, not a funnel."</div></div></div>
+</section>
+
+<!-- ===================== CLOSING ===================== -->
+<section class="closing">
+  <div class="mark">*</div>
+  <p>These prompts are starting points, tuned to sound like a real owner and to keep you in control of the final word.</p>
+  <p>Change them, break them, make them yours.</p>
+  <div class="sign">Simplif<span>ai</span>.</div>
+  <div class="tag">You bring the expertise. We bring the system.</div>
+</section>
+
+</body>
+</html>

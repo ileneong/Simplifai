@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplifai — 5 prompts that replace a $2,000/month front desk</title>
+  <link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e; /* dark preview surround */
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; padding: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* 1080×1350 — 4:5 ratio, always — Scheme A: Yellow Hero */
+    .slide {
+      width: 1080px; height: 1350px;
+      position: relative; overflow: hidden;
+      background: #ffc857; /* --color-yellow */
+      flex-shrink: 0;
+    }
+
+    .content {
+      position: absolute; inset: 0;
+      padding: 96px; /* --space-9 safe zone */
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    /* Label tag — small, uppercase */
+    .tag {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ff7a59; /* --color-coral — Scheme A accent */
+      margin-bottom: 40px;
+    }
+
+    .headline {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 84px;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+      color: #1a1a2e; /* --color-text-primary */
+      margin-bottom: 56px;
+    }
+
+    /* Accent — hand-drawn coral underline under a key phrase */
+    .uline { position: relative; white-space: nowrap; }
+    .uline .stroke {
+      position: absolute;
+      left: -1%; bottom: -0.16em;
+      width: 102%; height: 0.3em;
+      overflow: visible;
+      pointer-events: none;
+    }
+
+    .body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 1.6;
+      color: #2a5f74; /* deep teal — Scheme A body */
+      max-width: 880px;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 96px; left: 96px;
+      width: 280px; height: auto;
+      object-fit: contain;
+    }
+
+    /* ---- Slide 2: CTA (Scheme B — Coral Hero) ---- */
+    .slide.cta { background: #ff7a59; } /* --color-coral */
+
+    /* Accent — oversized yellow asterisk, top-left */
+    .accent-ast {
+      position: absolute;
+      top: 84px; left: 96px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 150px;
+      line-height: 0.7;
+      color: #ffc857; /* --color-yellow */
+    }
+
+    .cta .tag { color: #ffc857; }
+    .cta .headline {
+      color: #ffffff;
+      font-size: 132px;
+      margin-bottom: 44px;
+    }
+    .cta .body {
+      color: rgba(255, 255, 255, 0.90);
+      max-width: 860px;
+      margin-bottom: 56px;
+    }
+
+    .action {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.38;
+      color: #ffffff;
+      max-width: 880px;
+    }
+    .action .kw { color: #ffc857; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="slide" id="slide-1">
+    <div class="content">
+      <div class="tag">For the busywork that never ends</div>
+      <div class="headline">5 prompts that replace a $2,000/month <span class="uline">personal assistant<svg class="stroke" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M5,27 C78,15 150,31 222,21 C292,13 352,27 395,18" fill="none" stroke="#ff7a59" stroke-width="7" stroke-linecap="round"/></svg></span>.</div>
+      <div class="body">You don't need to hire an assistant to stay on top of the admin. You need five prompts and ten minutes. The full set is in the caption, so save it.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal.svg" alt="Simplifai">
+  </div>
+
+  <div class="slide cta" id="slide-2">
+    <div class="accent-ast">*</div>
+    <div class="content">
+      <div class="tag">The full toolkit</div>
+      <div class="headline">Want all 60?</div>
+      <div class="body">Ten prompts for every job your business repeats. Support, leads, reviews, content, bookings and follow-ups.</div>
+      <div class="action">Follow, then DM us <span class="kw">PROMPTS</span> and we'll send you the guide.</div>
+    </div>
+    <img class="logo" src="../../../brand-guidelines/simplifai/assets/logo-2026/simplifai-lockup-horizontal-white.svg" alt="Simplifai">
+  </div>
+</body>
+</html>

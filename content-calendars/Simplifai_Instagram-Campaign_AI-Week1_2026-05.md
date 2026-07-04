@@ -120,7 +120,7 @@
 ## Production Notes
 
 - Export all slides via Playwright script (not browser download buttons)
-- PNGs save to `content/drafts/dayN-slides/`
+- PNGs save to each post's `slides/` folder under its month, e.g. `content/2026-05/DRAFT_simplifai_carousel-dayN_YYYY-MM-DD/slides/` (see `content/README.md`)
 - Each carousel caption follows: Hook → Body → CTA → 3 hashtags → AI disclosure
 - Hashtags consistent across week: `#SmallBusiness` `#AIMarketing` `#MarketingTips`
 - "Comment prompt" CTA active on Days 3–7; ensure DM automation is set up before Day 3 posts

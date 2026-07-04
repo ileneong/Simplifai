@@ -62,7 +62,7 @@ The canonical reference for Simplifai Instagram posts:
 - **Size**: 1080 × 1350 px (4:5 portrait ratio) — always
 - **Safe zone**: 90px padding on all sides
 - **Logo area**: Bottom-left or bottom-right, within safe zone, ~110px wide
-- **Format**: Self-contained HTML file saved to `content/drafts/` OR Canva design via `generate-design`
+- **Format**: Self-contained HTML file saved to the post folder under its month (`content/[YYYY-MM]/DRAFT_simplifai_[type]_[YYYY-MM-DD]/`) OR Canva design via `generate-design`
 
 ---
 
@@ -368,3 +368,14 @@ Track which scheme was used last so the next post rotates correctly.
 | "Your biggest bottleneck is the work only you can do" (6-slide carousel · operational enquiry-to-reply workflow · accent: thick underline bar) | 2026-06-24 | C (Purple Hero) |
 | "The jobs your business repeats every week" (single static post · 6 workflow types w/ SVG illustrations · accent: coral underline) | 2026-06-24 | D (Light/Neutral) |
 | "5 prompts that replace a $2,000/month marketing hire" (single static post · growth/share-bait · 5 copy-paste prompts in caption · accent: oversized coral asterisk) | 2026-06-25 | A (Yellow Hero) |
+| "A free way to make on-brand graphics" (6-slide carousel · What's-New-in-AI · Adobe Express AI Assistant goes free · accent: yellow circle underline) | 2026-06-27 | B (Coral Hero) |
+| "Claude now ships ready-made workflows for small businesses" (6-slide carousel · What's-New-in-AI · Claude for Small Business + approval gate · accent: yellow thick underline bar) | 2026-06-27 | C (Purple Hero) |
+| "Your AI use policy fits on one page" (6-slide carousel · educational · 10-line AI use policy from AI Fluency for Small Business course · accent: purple corner bracket) | 2026-06-27 | D (Light/Neutral) |
+| "Anyone can design a carousel that actually gets read" (6-slide carousel · educational · generalized carousel-design method, teach-them-to-fish · accent: oversized coral asterisk) | 2026-06-27 | A (Yellow Hero) |
+| "Six copies of the same tool. Nobody noticed." (6-slide carousel · educational · value of a system audit, from a real client repo audit · accent: yellow dot cluster) | 2026-06-27 | B (Coral Hero) |
+| "Meet Claude Cowork" (5-frame Instagram **Story** · 1080×1920 · What's-New-in-AI · explains Cowork to prospects · anchored Purple, palette rotated per frame) | 2026-06-28 | C (Purple Hero) |
+| "Talk, do not type" (6-slide carousel · What's-New-in-AI · ChatGPT dictation upgrade on all plans · per-slide line illustrations: mic, waveform, clock, phone-mic, privacy shield, bookmark · accent: thick underline bar) | 2026-06-30 | D (Light/Neutral) |
+| "The System at Work: the owner" (6-slide carousel · persona series 1/3 · Cowork owner workflows: invoices, cash flow, month-end, contracts · accent: coral asterisk) | 2026-06-30 | A (Yellow Hero) |
+| "The System at Work: the marketer" (6-slide carousel · persona series 2/3 · Cowork campaign flow + Canva assets, brand-voice payoff · accent: yellow dot cluster) | 2026-06-30 | B (Coral Hero) |
+| "The System at Work: the sales coordinator" (6-slide carousel · persona series 3/3 · Cowork lead + ticket triage, approval gate, voice payoff · accent: yellow underline bar) | 2026-06-30 | C (Purple Hero) |
+| "5 prompts that replace a $2,000/month personal assistant" (2-slide carousel · lead-magnet teaser, 5 prompts in caption + follow-for-60 CTA · sector-neutral PA framing · slide 1 accent: coral underline under "personal assistant" · slide 2 CTA: coral w/ yellow asterisk) | 2026-07-04 | A (Yellow Hero) — slide 1 rotated off D after a D-scheme carousel was posted |

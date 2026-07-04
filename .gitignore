@@ -10,3 +10,9 @@ reports/
 
 # Lead/prospect data with real contact details
 growth/lead-gen/*.csv
+
+# Competitor-ads fetcher scratch output
+research/_scratch/
+
+# Playwright Facebook session profile (contains login cookies — never commit)
+research/_scripts/.fb-profile/

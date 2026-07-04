@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simplifai — Carousel · ChatGPT Memory (1080×1350)</title>
+<!-- Design system tokens -->
+<link rel="stylesheet" href="../../../brand-guidelines/simplifai/colors_and_type.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#1a1a2e; display:flex; flex-direction:column; align-items:center; gap:40px; padding:40px;
+  font-family:'Plus Jakarta Sans', sans-serif; }
+
+/* 1080×1350 — 4:5 portrait carousel slide. Scheme B — Coral. */
+.slide {
+  width:1080px; height:1350px; position:relative; overflow:hidden;
+  background:#ff7a59; flex-shrink:0;
+  font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+/* Safe zone — all content stays inside */
+.content {
+  position:absolute; inset:0; padding:96px; /* --space-9 */
+  display:flex; flex-direction:column; justify-content:center;
+}
+
+/* Kicker — small label, slide 1 + final only */
+.kicker {
+  align-self:flex-start; font:700 28px 'Plus Jakarta Sans';
+  letter-spacing:.10em; text-transform:uppercase;
+  background:#ffc857; color:#1a1a2e;
+  padding:14px 30px; border-radius:9999px; margin-bottom:48px;
+}
+
+/* Accent mark — yellow dot cluster, this carousel's through-line motif */
+.accent { display:flex; gap:18px; margin-bottom:40px; }
+.accent span { width:30px; height:30px; border-radius:9999px; background:#ffc857; }
+
+/* Headline */
+.headline {
+  font-family:'Poppins'; font-weight:800; font-size:100px;
+  line-height:1.02; letter-spacing:-0.025em;
+  color:#ffffff; margin-bottom:48px; /* --space-7 */
+}
+.headline .pop { color:#ffc857; } /* yellow emphasis word */
+
+/* Body copy */
+.body {
+  font-family:'Plus Jakarta Sans'; font-weight:500; font-size:44px;
+  line-height:1.5; color:rgba(255,255,255,0.86); max-width:840px;
+}
+.body strong { font-weight:700; color:#ffffff; }
+
+/* Swipe cue (slide 1) */
+.swipe {
+  position:absolute; right:96px; bottom:104px; z-index:4;
+  font:700 34px 'Plus Jakarta Sans'; color:#ffffff; opacity:.85;
+  display:inline-flex; align-items:center; gap:12px;
+}
+
+/* Save CTA pill (final slide) */
+.cta {
+  align-self:flex-start; margin-top:8px;
+  font:700 40px 'Plus Jakarta Sans'; color:#1a1a2e; background:#ffc857;
+  padding:26px 52px; border-radius:9999px;
+  display:inline-flex; align-items:center; gap:18px;
+}
+
+/* Wordmark — bottom-left, inside safe zone */
+.wordmark {
+  position:absolute; bottom:96px; left:96px; z-index:4;
+  font-family:'Poppins'; font-weight:800; font-size:52px;
+  letter-spacing:-0.02em; color:#ffffff;
+}
+.wordmark em { color:#ffc857; font-style:normal; }
+
+/* Slide counter — subtle, top-right */
+.counter {
+  position:absolute; top:96px; right:96px; z-index:4;
+  font:700 30px 'Plus Jakarta Sans'; color:#ffffff; opacity:.5;
+  letter-spacing:.04em;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Slide 1 — HOOK ===== -->
+<div class="slide" id="slide-1">
+  <div class="counter">01 / 06</div>
+  <div class="content">
+    <span class="kicker">What's new in AI</span>
+    <div class="accent"><span></span><span></span><span></span></div>
+    <div class="headline">Stop re-explaining your business to&nbsp;<span class="pop">ChatGPT.</span></div>
+    <div class="body">Its memory just got a serious upgrade. Set it up once, and it remembers.</div>
+  </div>
+  <span class="swipe">Here's how →</span>
+</div>
+
+<!-- ===== Slide 2 — WHAT CHANGED ===== -->
+<div class="slide" id="slide-2">
+  <div class="counter">02 / 06</div>
+  <div class="content">
+    <div class="accent"><span></span><span></span><span></span></div>
+    <div class="headline">Its memory just <span class="pop">doubled.</span></div>
+    <div class="body">This month OpenAI rebuilt it with roughly twice the capacity, plus controls to see and edit exactly what it knows about you.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 3 — WHY IT MATTERS ===== -->
+<div class="slide" id="slide-3">
+  <div class="counter">03 / 06</div>
+  <div class="content">
+    <div class="accent"><span></span><span></span><span></span></div>
+    <div class="headline">It can hold your <span class="pop">brand</span> now.</div>
+    <div class="body">Your voice, your customer, your offers, remembered across chats. No more starting from a blank box every single time.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 4 — DO THIS ===== -->
+<div class="slide" id="slide-4">
+  <div class="counter">04 / 06</div>
+  <div class="content">
+    <div class="accent"><span></span><span></span><span></span></div>
+    <div class="headline">Tell it <span class="pop">once.</span></div>
+    <div class="body">Explain who you are and who you serve, clearly. Then ask it to remember. That becomes its starting point for every caption after.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 5 — HONEST LIMIT ===== -->
+<div class="slide" id="slide-5">
+  <div class="counter">05 / 06</div>
+  <div class="content">
+    <div class="accent"><span></span><span></span><span></span></div>
+    <div class="headline">But check what it <span class="pop">keeps.</span></div>
+    <div class="body">Open its memory and review what it stored. And never paste a customer's personal details into any AI tool. More memory, same rule.</div>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+<!-- ===== Slide 6 — CTA / SAVE ===== -->
+<div class="slide" id="slide-6">
+  <div class="counter">06 / 06</div>
+  <div class="content">
+    <span class="kicker">You bring the expertise. We bring the system.</span>
+    <div class="accent"><span></span><span></span><span></span></div>
+    <div class="headline">Set yours up this <span class="pop">week.</span></div>
+    <div class="body" style="margin-bottom:48px;">Save this so it's there when you sit down to do it.</div>
+    <span class="cta">⤓ Save this</span>
+  </div>
+  <div class="wordmark">Simplif<em>ai</em></div>
+</div>
+
+</body>
+</html>

@@ -147,7 +147,7 @@ Pre-rendered, opaque-background exports for social profiles and covers — use t
 | `simplifai-profile-lockup-{coral,purple,white,light}.png` | 1080×1080 | Profile pictures with the wordmark — use only where the avatar renders large. |
 | `simplifai-fb-cover-{coral,light}.png` | 1640×856 | Facebook page cover. Logo sits in the mobile safe zone. |
 
-Source builds + the square exporter: `content/drafts/DRAFT_simplifai_profile-pics*_2026-06-26.html`, `DRAFT_simplifai_fb-cover_2026-06-26.html`, and `content/drafts/export_square.py`.
+Source builds live in their month folders (e.g. `content/2026-06/DRAFT_simplifai_fb-cover_2026-06-26/`); the square exporter is `content/_scripts/export_square.py`.
 
 ---
 
@@ -159,5 +159,5 @@ Source builds + the square exporter: `content/drafts/DRAFT_simplifai_profile-pic
 4. Use Poppins for headlines and Plus Jakarta Sans for body/labels.
 5. Add blob shapes and floating dots as decorative layer.
 6. Embed the relevant logo asset (base64 or relative path from `brand-guidelines/simplifai/assets/`).
-7. Save output to `content/drafts/` using naming convention: `DRAFT_simplifai_[type]_[YYYY-MM-DD].html`
+7. Save output to a per-post folder under its month: `content/[YYYY-MM]/DRAFT_simplifai_[type]_[YYYY-MM-DD]/DRAFT_simplifai_[type]_[YYYY-MM-DD].html` (see `content/README.md`)
 8. Disclose AI assistance in the post copy or as a caption note (Simplifai practice).
