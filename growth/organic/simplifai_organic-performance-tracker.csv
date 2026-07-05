@@ -1,0 +1,2 @@
+content_piece,publish_date,snapshot_date,format,pillar,scheme,views,likes,comments,saves,shares,profile_visits,new_follows,save_rate,engagement_rate,follow_rate,verdict,notes
+EXAMPLE ROW — replace with a real post,2026-07-01,2026-07-08,carousel,system-teaching,A,1500,45,6,30,12,80,9,2.00,6.20,11.25,repeat,"Example only. save_rate = saves/views*100; engagement_rate = (likes+comments+saves+shares)/views*100; follow_rate = new_follows/profile_visits*100."
