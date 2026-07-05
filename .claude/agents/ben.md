@@ -5,7 +5,7 @@ description: >
   performance readouts (ads + organic), content pipeline audits, building the weekly content
   calendar, and building draft posts from digest briefs. Invoke for any "Ben, ..." request
   or marketing-ops orchestration across research, planning, and content production.
-tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, TodoWrite
+tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, TodoWrite, mcp__claude_ai_Google_Drive__create_file, mcp__claude_ai_Google_Drive__search_files, mcp__claude_ai_Google_Drive__get_file_metadata
 model: fable
 ---
 

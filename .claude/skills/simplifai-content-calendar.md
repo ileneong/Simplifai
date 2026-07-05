@@ -5,12 +5,13 @@ description: >
   asked to plan the week, build or update the content calendar, or decide what to post and
   which ads to run this week. Fuses the weekly briefing (or latest digests), the pipeline
   audit, the ads tracker's scale/refresh/kill decisions, and the scheme rotation into one
-  dated calendar file in content-calendars/ with an organic lane and an ads lane. Also runs
-  as the final step of the weekly briefing.
+  dated calendar file in content-calendars/ with an organic lane and an ads lane, then
+  mirrors it to a Google Sheet via the Google Drive connector. Also runs as the final step
+  of the weekly briefing.
 argument-hint: "[optional: week start date YYYY-MM-DD, defaults to the coming Sunday]"
 user-invocable: true
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 ## Maintenance Note
@@ -53,7 +54,13 @@ The calendar is where research and performance become a week of scheduled work. 
    - Include a weekly budget note and a **check-in day** (default Friday) for logging results back to the ads tracker per [`growth/ads/README.md`](../../growth/ads/README.md).
    - If the tracker has no rows for a recent period, the ads lane says "no active ads data" — never invent a paid plan.
 5. **Write the calendar file** using the format below.
-6. **Verify:**
+6. **Mirror to Google Sheets** (if the Google Drive connector is available in the session):
+   - Create a **native Google Sheet** with `mcp__claude_ai_Google_Drive__create_file`: title `Simplifai Content Calendar [YYYY-MM-DD] to [MM-DD]`, `contentMimeType: text/csv`, CSV as `textContent` (CSV auto-converts to a Sheet; leave conversion enabled).
+   - One tab, three blocks: a short header (theme + arc), the **ORGANIC LANE** (columns: Day, Date, Platform, Format, Scheme, Topic / Hook, Post folder, Status, Source), then the **ADS LANE** (Creative, Tracker decision, This week, Budget note) and the check-in line. End with a line naming the repo markdown as the source of truth.
+   - The connector can create files but **not edit them** — one new Sheet per week, never try to update last week's. If the calendar is re-run mid-week, create a fresh Sheet (append `v2` to the title) and say so.
+   - Skip emoji status markers in the Sheet; plain words ("Publish", "Finish", "New build") read better in cells.
+   - If the connector is unavailable or errors, skip this step and record it under Coverage notes — the repo markdown is the deliverable; the Sheet is a convenience mirror.
+7. **Verify:**
    - Every slot traces to a plan item, digest line, or tracker decision.
    - The scheme sequence is legal against the Scheme Usage Log (no consecutive repeats, correct continuation from the last logged scheme).
    - Every `finish` slot names a folder that actually exists; `new build` slots name the folder that *will* be created, following [`content/README.md`](../../content/README.md) naming.
@@ -84,6 +91,6 @@ End the file with **Coverage notes**: which inputs were missing or stale (no bri
 
 ## Guardrails
 
-- Only ever writes the one calendar file in `content-calendars/`. Never touches `content/`, the trackers, or the rotation logs.
+- Only ever writes the one calendar file in `content-calendars/` plus its Google Sheet mirror. Never touches `content/`, the trackers, or the rotation logs.
 - Voice rules apply to every hook and CTA drafted here: no em dashes, no FOMO hooks, plain English, no URLs.
 - Ads lane decisions come **from** the tracker; this skill never overrides a logged decision, only schedules it. Proposing a *different* decision is a note for the owner, not a plan line.
