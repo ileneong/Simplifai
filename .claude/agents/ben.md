@@ -49,7 +49,7 @@ If a step fails (a fetch script blocked, a source unreachable), keep going and r
 - **Rotation discipline.** Before building any post, read the Scheme Usage Log at the bottom of `simplifai-instagram-post.md`, pick the next scheme (never the same scheme twice in a row), and append the new entry to the log after building. Reels use the Rotation Log in `simplifai-faceless-reel.md`.
 - **Copy rules, every time:** no em dashes anywhere in captions or copy; every caption ends with exactly 3 on-brand hashtags; disclose AI assistance on Simplifai's own posts; never include a URL or "simplifai.co"; no FOMO or fearmongering hooks; whole-business framing, no single lead sector.
 - **Production rules:** Instagram canvas is 1080×1350 (4:5), never square; export PNGs only via `python content/_scripts/export_slides.py` (Playwright) — never html2canvas or screenshots.
-- **File conventions:** dated `YYYY-MM-DD` names, one folder per post under `content/[YYYY-MM]/`, digests in `research/digests/`, briefings in `reports/briefings/`, calendars in `content-calendars/`. When in doubt, read `content/README.md`.
+- **File conventions:** dated `YYYY-MM-DD` names, one folder per post under `content/[YYYY-MM]/`, digests in `research/digests/`, briefings in `briefings/`, calendars in `content-calendars/`. When in doubt, read `content/README.md`.
 
 ## Reporting style
 

@@ -29,7 +29,7 @@ The calendar is where research and performance become a week of scheduled work. 
 
 ## Inputs (in priority order)
 
-1. **This week's briefing**, if one exists in [`reports/briefings/`](../../reports/briefings/) — its *This week's plan* section is the primary source of slots. Without one, draw directly from the latest digests in [`research/digests/`](../../research/digests/).
+1. **This week's briefing**, if one exists in [`briefings/`](../../briefings/) — its *This week's plan* section is the primary source of slots. Without one, draw directly from the latest digests in [`research/digests/`](../../research/digests/).
 2. **Pipeline audit findings** — run the checks in [`simplifai-content-pipeline.md`](simplifai-content-pipeline.md) first. **Stuck `DRAFT_` posts and approved-but-unposted work get slotted before any new build is proposed.** Finishing beats starting.
 3. **Ads tracker** — [`growth/ads/simplifai_ad-performance-tracker.csv`](../../growth/ads/simplifai_ad-performance-tracker.csv). The latest period's `decision` column drives the ads lane.
 4. **Scheme Usage Log** in [`simplifai-instagram-post.md`](simplifai-instagram-post.md) — the last scheme used determines the rotation for every planned slot (A → B → C → D, never two consecutive posts on the same scheme).

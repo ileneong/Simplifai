@@ -165,7 +165,7 @@ Feed scheme sequence Sun→Sat: A, D, B, A, B, C, B. No two consecutive posts sh
 - Before building Saturday's post, re-check the Scheme Usage Log and append its entry after the build.
 
 ## Coverage notes
-- Built from this week's briefing (`reports/briefings/DRAFT_simplifai_weekly-briefing_2026-07-05.md`); all three digest types were available. Intel digest is 5 days old; both competitor digests are 7 days old and were explicit partial samples.
+- Built from this week's briefing (`briefings/DRAFT_simplifai_weekly-briefing_2026-07-05.md`); all three digest types were available. Intel digest is 5 days old; both competitor digests are 7 days old and were explicit partial samples.
 - No new research ran this sweep (owner's instruction). Next biweekly competitor recon due week of 2026-07-12.
 - Organic tracker has no real rows yet, so no organic signal informed slot choices; slots are driven by the ads tracker, the digests, and the pipeline backlog.
 - Last week's calendar (2026-06-27 to 07-04) was an unfilled template; this calendar restarts the planning loop.

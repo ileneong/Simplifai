@@ -5,7 +5,7 @@ description: >
   this skill when asked for the weekly briefing, a Sunday briefing, a marketing plan for the
   week, or "what should I focus on this week?". Fuses the latest research digests, the ads
   and organic performance trackers, and a live pipeline audit into a prioritised briefing in
-  reports/briefings/, then hands off to the content-calendar skill for the day-by-day plan.
+  briefings/, then hands off to the content-calendar skill for the day-by-day plan.
 argument-hint: "[optional: week start date YYYY-MM-DD, defaults to the coming Sunday]"
 user-invocable: true
 metadata:
@@ -22,7 +22,7 @@ Bump the version when edited — minor for tweaks (1.0.0 → 1.1.0), major for b
 
 Research, performance data, and the content pipeline each tell part of the story; the briefing is where they become **one set of decisions**. It answers three questions with evidence: what worked, what's worth making next, and what's stuck. It is the signature output of Ben ([`.claude/agents/ben.md`](../agents/ben.md)) and the first thing the owner reads on Sunday.
 
-**Output:** `reports/briefings/DRAFT_simplifai_weekly-briefing_[YYYY-MM-DD].md` — date is the Sunday that starts the week being planned (from `$ARGUMENTS`, defaulting to the coming Sunday). Conventions in [`reports/briefings/README.md`](../../reports/briefings/README.md).
+**Output:** `briefings/DRAFT_simplifai_weekly-briefing_[YYYY-MM-DD].md` — date is the Sunday that starts the week being planned (from `$ARGUMENTS`, defaulting to the coming Sunday). Conventions in [`briefings/README.md`](../../briefings/README.md).
 
 **The trust rule (same as every Simplifai skill):** every number traces to a tracker CSV row; every intel claim traces to a digest line. Missing data is reported as "no data" — never estimated, never padded.
 
