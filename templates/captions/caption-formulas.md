@@ -17,6 +17,10 @@
 3. **Practical takeaway**
 4. **CTA to save or share**
 
+## House Style
+- **Length:** stay under Instagram's 2,200-character limit (emoji count as 2 characters). Count before shipping and leave ~50 characters of headroom.
+- **Emojis:** use some, but not excessively — keep them relevant. A few as visual anchors (list markers, a key warning, the closing CTA), never decorative strings.
+
 ## Compliance Reminders
 - Avoid: "This will..." / "Guaranteed to..." / "Cures..."
 - Use: "May support..." / "Research suggests..." / "Many people find..."

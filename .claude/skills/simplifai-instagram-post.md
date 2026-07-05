@@ -202,6 +202,10 @@ Every Simplifai Instagram post must:
 - Long sentences that require squinting
 - More than two font sizes
 
+**In the caption:**
+- **Stay under Instagram's 2,200-character limit.** Count the caption before shipping (emoji count as 2 characters) and leave ~50 characters of headroom.
+- **Use some emojis, not many.** A few relevant ones as visual anchors — one per list item, one on a key warning, one on the closing CTA. Never decorative strings, never one per sentence.
+
 ---
 
 ## HTML Mockup Template
@@ -346,6 +350,7 @@ Before presenting a mockup, verify:
 - [ ] Logo present, correctly positioned
 - [ ] No URLs, hashtags, or disclosure text on the graphic
 - [ ] Body copy is 2–3 sentences max
+- [ ] Caption under 2,200 characters (emoji count double); a few relevant emojis, not excessive
 - [ ] File saved as `DRAFT_simplifai_instagram-[slug]_[YYYY-MM-DD].html`
 
 ---

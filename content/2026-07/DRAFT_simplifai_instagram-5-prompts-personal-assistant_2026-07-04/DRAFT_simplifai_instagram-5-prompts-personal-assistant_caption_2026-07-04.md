@@ -10,32 +10,30 @@
 
 5 prompts that replace a $2,000/month personal assistant.
 
-Not because AI runs your business for you. Because most of what an assistant does, chasing rebookings, answering the same questions, tidying the week's admin, is repeatable, and a good prompt makes it repeatable for you. Works whether you have a front desk or run the whole thing from your phone. You stay the expert. The prompt just gets you to a first draft in minutes.
+Most of what an assistant does, chasing rebookings, answering the same questions, tidying the week's admin, is repeatable. A good prompt makes it repeatable for you. You stay the expert. The prompt gets you to a first draft in minutes.
 
-Copy these. Fill in the brackets. Save it for Sunday night.
+Copy these. Fill in the brackets. Save it. 📌
 
-1. Fill next week's empty slots
-"Act as my rebooking assistant. I run a [type of business] and I want to nudge past customers to book again. Here is a customer I saw recently: [what they came for, when, any note I have]. Write a warm, low pressure message inviting them to rebook, 4 short sentences, my voice, one clear next step. No guilt, no hard sell."
+1. 📅 Fill next week's empty slots
+"Act as my rebooking assistant. I run a [type of business]. Here is a customer I saw recently: [what they came for, when]. Write a warm, low pressure message inviting them to rebook. 4 short sentences, my voice, one clear next step. No guilt, no hard sell."
 
-2. Win back a client who went quiet
-"I have customers who stopped booking a while ago. Here is one: [what they used to book, roughly how long since their last visit]. Write a short check in message that reopens the door without pressure, acknowledges it has been a while, and offers one easy way back. 4 sentences, friendly, not salesy."
+2. 💬 Win back a client who went quiet
+"Here is a customer who stopped booking: [what they used to book, how long since their last visit]. Write a short check in that reopens the door without pressure and offers one easy way back. 4 sentences, friendly, not salesy."
 
-3. Answer a new enquiry in your voice
-"A new enquiry just came in asking about [pricing, availability, or a service]. Here is how I usually reply: [paste one of your real replies]. Using that tone, draft a reply that answers their question, sets the right expectation, and ends by inviting them to book. Keep it under 90 words. No jargon, no em dashes."
+3. ✉️ Answer a new enquiry in your voice
+"A new enquiry asked about [pricing, availability, or a service]. Here is how I usually reply: [paste a real reply]. In that tone, draft a reply that answers their question and invites them to book. Under 90 words, no jargon."
 
-4. Your Sunday-night admin, done
-"Here are my rough notes from this week: [paste bookings, follow ups owed, things I said I'd send]. Turn this into a clean summary: what happened, who I still owe a reply, and a 5 item to do list for next week in priority order. Plain English, no filler."
+4. 🗂️ Your weeknight admin, done
+"Here are my rough notes from this week: [paste bookings, follow ups owed, things I said I'd send]. Turn this into a clean summary: what happened, who I still owe a reply, and a 5 item to do list for next week in priority order."
 
-5. The answers you retype every day
-"Here are questions customers ask me all the time: [list 5 to 8, for example cancellation policy, what to bring, how to prepare]. Draft a clear, on brand answer to each that I can reuse in DMs and emails. Warm, specific, 2 to 3 sentences each. Flag any answer that should be checked against my actual policy."
+5. 🔁 The answers you retype every day
+"Here are questions customers ask all the time: [list 5 to 8]. Draft a clear, on brand answer to each that I can reuse in DMs and emails. Warm, 2 to 3 sentences each. Flag anything I should check against my actual policy."
 
-One rule above all: never paste a customer's name or personal details into an AI tool. Strip the personal bits first and keep it about the task. Credible beats fast, every time.
+🔒 One rule above all: never paste a customer's name or personal details into an AI tool. Strip the personal bits first.
 
-These five are just the start. We put together the full set, 60 prompts in total, ten for each of the six jobs your business repeats every week: customer support, leads, reviews, content, bookings and follow-ups. Want the whole guide? Follow us, then DM the word PROMPTS and we will send it straight to you.
+These 5 are from a full set of 60 covering the six jobs your business repeats every week. Want the whole guide? Follow us, then DM the word PROMPTS and we will send it to you.
 
-Which empty slot would these fill first for you? Tell me below.
-
-🤖 Drafted with AI, reviewed by a human.
+Which one would you run first? Tell me below. 👇
 
 #smallbusinesstips #aiforsmallbusiness #smallbusinessowner
 

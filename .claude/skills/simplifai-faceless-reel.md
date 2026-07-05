@@ -178,6 +178,7 @@ Colour scheme rotates per Reel — **never two consecutive Reels on the same sch
 
 - **Disclose AI assistance** in the caption (Simplifai practice — transparency is part of credibility).
 - **Never a URL or simplifai.co** anywhere on screen or in caption — Simplifai has no website yet.
+- **Caption under 2,200 characters** (Instagram's limit; emoji count as 2). Use a few relevant emojis as anchors, not excessively.
 - **No fabricated results or testimonials.** Honest numbers only ("90 mins", not invented growth stats).
 - **Flag health-adjacent claims** — many viewers are wellness/coaching owners; never imply a health
   outcome. The system message is about marketing operations, not wellbeing claims.
@@ -211,6 +212,7 @@ Before a Reel is "shoot-ready", verify:
 - [ ] **Closing line resolves to the system message** (not a tactic)
 - [ ] Colour scheme rotates (≠ previous Reel); one accent element; wordmark in safe zone
 - [ ] Caption written with AI disclosure; no URL/simplifai.co; health-adjacent lines flagged
+- [ ] Caption under 2,200 characters; a few relevant emojis, not excessive
 - [ ] Lane noted (Lane B kept to ~1 in 5)
 
 ---

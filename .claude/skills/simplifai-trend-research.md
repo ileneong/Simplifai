@@ -93,6 +93,7 @@ Pulled straight from [`CLAUDE.md`](../../CLAUDE.md). Bake these into every diges
 - **No unsubstantiated claims.** Every claim is sourced and dated, or it doesn't ship.
 - **Plain English.** Owners are experts in their field, not in AI.
 - **No em dashes** in any caption or on-graphic copy — use commas, full stops, or rewrite. (User preference, applies to all copy.)
+- **Caption under 2,200 characters** (Instagram's limit; emoji count as 2). Use some relevant emojis as anchors, not excessively. (User preference, applies to all captions.)
 - **Disclose AI assistance** on the resulting Simplifai post (in the caption).
 - **Regulated-claim flag.** If an update touches health/finance/legal use, flag it so the resulting post avoids absolute claims.
 - **Never include a URL** or simplifai.co on a graphic. Source citations live in the caption, named in words.
