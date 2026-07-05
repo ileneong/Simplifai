@@ -15,7 +15,7 @@
 
 | Day | Date | Platform | Format | Scheme | Topic / Hook | Status |
 |---|---|---|---|---|---|---|
-| Sun | 2026-07-05 | Instagram | Carousel (2 slides) | A | "5 prompts that replace a $2,000/month personal assistant" | 🟡 finish: approve + publish |
+| Sun | 2026-07-05 | Instagram | Carousel (2 slides) | A | "5 prompts that replace a $2,000/month personal assistant" | ✅ Published 2026-07-05 |
 | Mon | 2026-07-06 | Instagram | Carousel (6 slides) | D | "Talk, do not type" (ChatGPT dictation) | 🟢 publish |
 | Tue | 2026-07-07 | Instagram | Carousel (6 slides) | B | "Six copies of the same tool. Nobody noticed." (system audit) | 🟡 finish: approve + publish |
 | Wed | 2026-07-08 | Instagram | Carousel (6 slides) | A | "The System at Work: the owner" (1/3) | 🟡 finish: approve + publish |
@@ -53,8 +53,8 @@ Feed scheme sequence Sun→Sat: A, D, B, A, B, C, B. No two consecutive posts sh
 **Angle:** Educate + growth. Sequel to the W26 paid winner, moved onto the whole-business admin lane.
 **Key message:** Most of what an assistant does is repeatable; a good prompt makes it repeatable for you.
 **CTA:** Save, follow, then DM the word PROMPTS for the full 60-prompt guide.
-**Post folder:** `content/2026-07/DRAFT_simplifai_instagram-5-prompts-personal-assistant_2026-07-04/`
-**Status:** 🟡 finish - built and complete; owner approves, publishes, renames.
+**Post folder:** `content/2026-07/PUBLISHED_simplifai_instagram-5-prompts-personal-assistant_2026-07-04/`
+**Status:** ✅ Published 2026-07-05. Organic snapshot due 2026-07-12 (publish + 7 days) - log via the organic-performance skill.
 **Source:** Ads tracker W26 scale decision on the original 5-prompts single; caption already written in the folder.
 **Dependency:** the DM PROMPTS promise needs the lead magnet ready to send: `content/2026-07/DRAFT_simplifai_lead-magnet_60-prompts_2026-07-04/` (PDF built, owner decides the delivery mechanic before this goes live).
 
