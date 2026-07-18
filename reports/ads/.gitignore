@@ -1,0 +1,3 @@
+# Allow blank scaffold reports (no real metric data) to be committed.
+# CSVs with real numbers are kept off remote by the parent .gitignore.
+!*.md
