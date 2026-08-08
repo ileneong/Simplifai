@@ -6,7 +6,9 @@ __pycache__/
 
 # Client engagement data — keep off the remote (compliance)
 client-*/
-reports/
+# reports/ is broadly ignored — only ads performance reports are tracked (see below)
+reports/_template/
+reports/monthly/
 
 # Lead/prospect data with real contact details
 growth/lead-gen/*.csv
