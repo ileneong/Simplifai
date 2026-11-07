@@ -6,7 +6,10 @@ __pycache__/
 
 # Client engagement data — keep off the remote (compliance)
 client-*/
-reports/
+reports/*
+!reports/ads/
+reports/ads/*
+!reports/ads/*.md
 
 # Lead/prospect data with real contact details
 growth/lead-gen/*.csv
